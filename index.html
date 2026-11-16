@@ -394,7 +394,7 @@
   <!-- HOME VIEW -->
   <section id="homeView" class="card">
     <div class="hero">
-      <span class="badge-ebi" id="ebiBadge">by: Mostafa Asaad(@Mostafaia)</span>
+      <span class="badge-ebi" id="ebiBadge">👌</span>
       <h2 id="heroTitle">FinTech and Digital Transformation Exam</h2>
       <p id="heroDesc">Comprehensive bilingual examination covering all 10 course modules: Digital Transformation, Financial Inclusion, Banking & Insurance Transformation, Cybersecurity & Regulations, Emerging Trends & Design Thinking, Big Data, AI & ML, Infrastructure, Blockchain & CBDCs, and Future Workforce.</p>
     </div>
@@ -552,7 +552,7 @@
   </div>
 </div>
 
-<footer>DesignedBy : @Mostafaia</footer>
+<footer>DesignedcBy:👌Mostata Asaad(@mostafaia)</footer>
 
 <script>
 const UI = {
@@ -560,8 +560,8 @@ const UI = {
     langBtn: "العربية",
     hdrTitle: "FinTech and Digital Transformation Exam",
     hdrSub: "Interactive Practice Exam",
-    ebiBadge: "by: Mostafa Asaad (@Mostafaia)",
-    heroTitle: "FinTech and Digital Transformation Exam",
+    ebiBadge: "👌",
+    heroTitle: "FinTech and Digital Transformation Certificate",
     heroDesc: "Comprehensive bilingual examination covering all 10 course modules: Digital Transformation, Financial Inclusion, Banking & Insurance Transformation, Cybersecurity & Regulations, Emerging Trends & Design Thinking, Big Data, AI & ML, Infrastructure, Blockchain & CBDCs, and Future Workforce.",
     lblModule: "Course Module",
     optModAll: "All Modules (1 - 10)",
@@ -635,8 +635,8 @@ const UI = {
   ar: {
     langBtn: "English",
     hdrTitle: "اختبارات التكنولوجيا المالية والتحول الرقمي",
-    hdrSub: "منصة الاختبار التفاعلي",
-    ebiBadge: "@Mostafaia",
+    hdrSub: "👌منصة الاختبار التفاعلي",
+    ebiBadge: "👍",
     heroTitle: "اختبارات التكنولوجيا المالية والتحول الرقمي",
     heroDesc: "اختبار تفاعلي شامل ثنائي اللغة يغطي جميع وحدات المادة العشر: مقدمة التحول الرقمي، الشمول المالي، التحول في البنوك والتأمين، الأمن السيبراني والتشريعات، الاتجاهات الناشئة والتفكير التصميمي، البيانات الضخمة، الذكاء الاصطناعي، البنية التحتية، البلوك تشين والعملات الرقمية، ومستقبل القوى العاملة.",
     lblModule: "الوحدة التدريبية",
@@ -710,7 +710,7 @@ const UI = {
   }
 };
 
-// 1. Direct Questions (124 Bilingual Questions: 93 MCQ + 31 True/False)
+// 1. Direct Questions (124 Original + 156 Deduplicated Unique PDF Questions = 280 Direct Bilingual Questions)
 const DIRECT_QUESTIONS = [
   { id: 1, module: 1, type: "mcq", diff: "easy",
     q_en: "What is the closest definition of Digital Transformation according to the course?",
@@ -1549,7 +1549,7 @@ const DIRECT_QUESTIONS = [
     exp_en: "Blockchain provides an auditable, transparent ledger that streamlines settlement without middlemen.",
     exp_ar: "تعزز تقنية البلوك تشين الشفافية وإمكانية التتبع وتقلل الحاجة إلى الوسطاء في المعاملات المالية." },
 
-  // True/False Direct Questions (31 Questions: IDs 94 to 124)
+  // True/False Direct Questions (IDs 94 to 124)
   { id: 94, module: 1, type: "tf", diff: "easy",
     q_en: "Digital transformation means converting manual procedures into electronic ones without needing to optimize them.",
     q_ar: "التحول الرقمي يعني تحويل الإجراءات اليدوية إلى إلكترونية دون الحاجة إلى تحسينها.",
@@ -1765,7 +1765,1110 @@ const DIRECT_QUESTIONS = [
     q_ar: "Reskilling وUpskilling يساعدان الموظفين على مواكبة التغيرات في وظائف ومهارات قطاع FinTech.",
     opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
     exp_en: "True. Continuous learning equips staff for evolving digital roles.",
-    exp_ar: "صح. يساعد تطوير المهارات وإعادة التأهيل الموظفين على مواكبة متطلبات وظائف المستقبل." }
+    exp_ar: "صح. يساعد تطوير المهارات وإعادة التأهيل الموظفين على مواكبة متطلبات وظائف المستقبل." },
+
+  // --- NEW UNIQUE DEDUPLICATED QUESTIONS FROM PDFs (156 Questions: IDs 125 to 280) ---
+  // Module 1
+  { id: 125, module: 1, type: "tf", diff: "medium",
+    q_en: "Replacing a single tool within an organization's digital transformation stack has an isolated effect and does not alter the interaction of the remaining tools.",
+    q_ar: "استبدال أداة واحدة ضمن منظومة التحول الرقمي للمؤسسة له تأثير معزول ولا يغير تفاعل باقي الأدوات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Due to tool interaction, replacing a single tool can alter the entire digital ecosystem.",
+    exp_ar: "خطأ. بسبب تفاعل الأدوات (Tool interaction)، استبدال أداة واحدة قد يغير منظومة الأدوات بالكامل." },
+
+  { id: 126, module: 1, type: "tf", diff: "hard",
+    q_en: "A single QR code can store up to 8,000 characters or 4,000 digits, or any combination between them.",
+    q_ar: "يمكن لرمز QR واحد تخزين ما يصل إلى 8,000 حرف أو 4,000 رقم، أو أي مزيج بينهما.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. It is reversed: a QR code stores up to 8,000 digits or 4,000 characters.",
+    exp_ar: "خطأ. معكوسة؛ يستوعب كود QR حتى 8,000 رقم (Digits) أو 4,000 حرف (Characters)." },
+
+  { id: 127, module: 1, type: "tf", diff: "medium",
+    q_en: "In Egypt, Digital Signatures are legally governed by Act 15 of the year 2004, though widespread adoption remains limited due to digital illiteracy.",
+    q_ar: "في مصر، يُنظَّم التوقيع الإلكتروني قانونياً بموجب القانون رقم 15 لسنة 2004، وإن كان انتشاره لا يزال محدوداً بسبب الأمية الرقمية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Egyptian E-Signature Law No. 15 of 2004 governs digital signatures, with adoption slowed by digital illiteracy.",
+    exp_ar: "صح. ينظم التوقيع الإلكتروني في مصر قانون رقم 15 لسنة 2004، وانتشاره محدود بسبب الأمية الرقمية." },
+
+  { id: 128, module: 1, type: "tf", diff: "medium",
+    q_en: "Public Key Infrastructure (PKI) relies on a single shared secret key to handle digital signatures, tunneling, and asymmetric encryption.",
+    q_ar: "تعتمد البنية التحتية للمفتاح العام (PKI) على مفتاح سري واحد مشترك للتعامل مع التوقيعات الرقمية والتشفير غير المتماثل.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. PKI always relies on an asymmetric key pair (Public Key and Private Key), not a single shared secret key.",
+    exp_ar: "خطأ. يعتمد PKI دائماً على زوج من المفاتيح (Public Key & Private Key) وليس مفتاحاً سرياً واحداً مشتركاً." },
+
+  { id: 129, module: 1, type: "tf", diff: "medium",
+    q_en: "Blockchain requires expensive high-end enterprise servers to maintain data integrity because of its decentralized architecture.",
+    q_ar: "يتطلب البلوك تشين خوادم مؤسسية باهظة الثمن وعالية المواصفات للحفاظ على سلامة البيانات بسبب بنيته اللامركزية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Blockchain is cost-effective and can run securely on low-cost servers.",
+    exp_ar: "خطأ. البلوكتشين تقنية موفرة للتكاليف ويمكن تشغيلها بأمان على سيرفرات منخفضة التكلفة (Low-cost servers)." },
+
+  { id: 130, module: 1, type: "tf", diff: "hard",
+    q_en: "According to Module 1, using cloud computing always costs less than on-premises infrastructure and eliminates security concerns.",
+    q_ar: "وفقاً للوحدة الأولى، فإن استخدام الحوسبة السحابية يكلف دائماً أقل من البنية التحتية المحلية (On-premises) ويلغي المخاوف الأمنية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Module 1 notes cloud computing is generally higher cost than on-premises and carries security considerations, though it excels in speed and flexibility.",
+    exp_ar: "خطأ. نصت المادة في Module 1 على أن السحابة أعلى تكلفة من On-premises وتحمل مخاوف أمنية، لكنها تتميز بسرعة التجهيز والمرونة." },
+
+  { id: 131, module: 1, type: "tf", diff: "medium",
+    q_en: "Augmented Reality (AR) creates a completely isolated, immersive digital environment, whereas Virtual Reality (VR) overlays digital content onto the real world.",
+    q_ar: "ينشئ الواقع المعزز (AR) بيئة رقمية غامرة ومعزولة تماماً، بينما يضيف الواقع الافتراضي (VR) محتوى رقمياً على العالم الحقيقي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Reversed: VR creates a fully immersive environment, whereas AR overlays digital content onto the real world.",
+    exp_ar: "خطأ. معكوسة؛ VR بيئة غامرة بالكامل، بينما AR يضيف محتوى رقمياً على العالم الحقيقي." },
+
+  { id: 132, module: 1, type: "tf", diff: "easy",
+    q_en: "Agile methodology emphasizes rigid, long-term development cycles with minimal stakeholder participation until final delivery.",
+    q_ar: "تركز المنهجية الرشيقة (Agile) على دورات تطوير طويلة وجامدة مع الحد الأدنى من مشاركة أصحاب المصلحة حتى التسليم النهائي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Agile emphasizes flexibility, collaboration, and rapid delivery in short iterative cycles with continuous stakeholder input.",
+    exp_ar: "خطأ. منهجية Agile تعتمد على المرونة، التعاون، والتسليم السريع في دورات قصيرة بمشاركة أصحاب المصلحة." },
+
+  { id: 133, module: 1, type: "tf", diff: "easy",
+    q_en: "ESG is a framework used exclusively to measure a company's financial profitability and return on investment in software tools.",
+    q_ar: "يُعد إطار ESG أداة تُستخدم حصرياً لقياس الربحية المالية للشركة والعائد على الاستثمار في البرمجيات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. ESG evaluates Environmental, Social, and Governance impact and sustainability, not solely financial profit.",
+    exp_ar: "خطأ. إطار ESG يقيم الأثر الأخلاقي والاستدامة البيئية والاجتماعية والحوكمة، وليس الربحية المالية فقط." },
+
+  { id: 134, module: 1, type: "tf", diff: "easy",
+    q_en: "Enterprise-grade organizations typically rely on free public VPN applications rather than professional ones to secure remote work after COVID-19.",
+    q_ar: "تعتمد المؤسسات الكبرى عادةً على تطبيقات VPN العامة المجانية بدلاً من الاحترافية لتأمين العمل عن بُعد بعد جائحة كوفيد-19.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Enterprises rely on paid, professional-grade VPN solutions rather than free public apps.",
+    exp_ar: "خطأ. المؤسسات (Enterprises) تعتمد دائماً على تطبيقات VPN احترافية مدفوعة وليس المجانية." },
+
+  { id: 135, module: 1, type: "tf", diff: "easy",
+    q_en: "Digital transformation contributes to environmental sustainability through paperless operations, energy-efficient systems, and smart logistics.",
+    q_ar: "يساهم التحول الرقمي في الاستدامة البيئية من خلال العمليات اللاورقية والأنظمة الموفرة للطاقة واللوجستيات الذكية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Paperless workflows, energy optimization, and smart logistics reduce carbon footprints.",
+    exp_ar: "صح. يساهم التحول الرقمي في الاستدامة عبر العمليات اللاورقية والأنظمة الموفرة للطاقة واللوجستيات الذكية." },
+
+  { id: 136, module: 1, type: "tf", diff: "hard",
+    q_en: "According to the 2022 global AI market breakdown, Europe held the largest percentage share (36.84%), surpassing North America.",
+    q_ar: "وفقاً لتوزيع سوق الذكاء الاصطناعي العالمي لعام 2022، استحوذت أوروبا على النسبة الأكبر (36.84%) متفوقة على أمريكا الشمالية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. North America led the market with 36.84%, followed by Europe at 24.97%.",
+    exp_ar: "خطأ. أمريكا الشمالية تصدرت السوق بنسبة 36.84%، تلتها أوروبا بنسبة 24.97%." },
+
+  { id: 137, module: 1, type: "tf", diff: "hard",
+    q_en: "In 2022, the Latin America, Middle East, and Africa (LAMEA) region accounted for 14.26% of the global AI market share.",
+    q_ar: "في عام 2022، استحوذت منطقة أمريكا اللاتينية والشرق الأوسط وأفريقيا (LAMEA) على 14.26% من حصة سوق الذكاء الاصطناعي العالمي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. LAMEA held 14.26% of the global AI market share in 2022.",
+    exp_ar: "صح. بلغت حصة منطقة LAMEA من سوق الذكاء الاصطناعي العالمي 14.26% في عام 2022." },
+
+  { id: 138, module: 1, type: "tf", diff: "medium",
+    q_en: "Older, well-established digital transformation tools consistently deliver the highest strategic impact compared to newly emerging tools.",
+    q_ar: "تحقق أدوات التحول الرقمي القديمة والراسخة دائماً أعلى تأثير استراتيجي مقارنة بالأدوات الناشئة الحديثة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Newly emerging tools generally deliver the highest transformative impact.",
+    exp_ar: "خطأ. الأدوات الأحدث (New tools) هي دائماً صاحبة التأثير الأعلى في التحول الرقمي." },
+
+  { id: 139, module: 1, type: "tf", diff: "hard",
+    q_en: "Cryptographic hashing and digital signatures can allow a company to sign a single page of a tender booklet to prove acceptance of the entire document's conditions.",
+    q_ar: "يمكن للتجزئة التشفيرية والتوقيعات الرقمية أن تتيح للشركة توقيع صفحة واحدة من كراسة الشروط لإثبات قبول شروط المستند بالكامل.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Hashing the full tender document and signing the hash links the entire document's integrity to a single signature.",
+    exp_ar: "صح. يمكن ربط كراسة الشروط كاملة عبر التجزئة التشفيرية والتوقيع الرقمي على صفحة واحدة لإثبات القبول." },
+
+  { id: 140, module: 1, type: "tf", diff: "easy",
+    q_en: "Ignoring change management and lacking clear ownership are recognized among the common mistakes in digital transformation.",
+    q_ar: "يُعد تجاهل إدارة التغيير وغياب الملكية الواضحة من الأخطاء الشائعة في التحول الرقمي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Lack of clear accountability and change management frequently derail transformation projects.",
+    exp_ar: "صح. تجاهل إدارة التغيير وغياب الملكية الواضحة من أبرز أسباب فشل مشاريع التحول الرقمي." },
+
+  // Module 2
+  { id: 141, module: 2, type: "tf", diff: "easy",
+    q_en: "People with vision disabilities and underage persons are explicitly included within the target scope of 'ALL' society members in financial inclusion.",
+    q_ar: "يُدرج الأشخاص ذوو الإعاقات البصرية والقُصَّر صراحةً ضمن النطاق المستهدف لجميع أفراد المجتمع في الشمول المالي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Financial inclusion encompasses vision-impaired individuals, minors/underage persons, and rural populations.",
+    exp_ar: "صح. يشمل الشمول المالي ذوي الإعاقات البصرية (Vision disabilities) والقصر (Underage persons) وسكان الريف." },
+
+  { id: 142, module: 2, type: "tf", diff: "easy",
+    q_en: "The relationship between FinTech adoption and financial inclusion is an inverse relationship.",
+    q_ar: "العلاقة بين تبني التكنولوجيا المالية (FinTech) والشمول المالي هي علاقة عكسية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. There is a direct positive relationship between FinTech adoption and financial inclusion.",
+    exp_ar: "خطأ. العلاقة بين FinTech والشمول المالي هي علاقة طردية (Direct) وليست عكسية." },
+
+  { id: 143, module: 2, type: "tf", diff: "medium",
+    q_en: "Overcomplicated FinTech applications requiring expensive smartphones can inadvertently exclude poor and less-educated populations from financial services.",
+    q_ar: "قد تؤدي تطبيقات FinTech شديدة التعقيد التي تتطلب هواتف ذكية باهظة الثمن إلى استبعاد الفقراء والأقل تعليماً من الخدمات المالية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Complex apps and high hardware requirements create barriers for low-income and less-literate users.",
+    exp_ar: "صح. التكنولوجيا المعقدة أو التي تتطلب أجهزة غالية قد تحرم الفقراء والأقل تعليماً، لذا يجب توفير بدائل مبسطة لهم." },
+
+  { id: 144, module: 2, type: "tf", diff: "medium",
+    q_en: "Digital wallets are a specialized subset of mobile wallets that only function on desktop computers.",
+    q_ar: "تُعد المحافظ الرقمية (Digital wallets) مجموعة فرعية متخصصة من محافظ الهاتف المحمول تعمل على أجهزة الكمبيوتر المكتبية فقط.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Mobile wallets are a specialized subset of digital wallets designed specifically for mobile devices.",
+    exp_ar: "خطأ. العكس؛ محافظ الهاتف المحمول (Mobile wallets) هي جزء متخصص من المحافظ الرقمية (Digital wallets)." },
+
+  { id: 145, module: 2, type: "tf", diff: "easy",
+    q_en: "Peer-to-peer (P2P) payments require multiple clearinghouse intermediaries to transfer money between individuals.",
+    q_ar: "تتطلب المدفوعات بين الأفراد (P2P) وسطاء مقاصة متعددين لتحويل الأموال بين الأشخاص.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. P2P apps enable direct transfers between individuals without traditional multi-layer intermediaries.",
+    exp_ar: "خطأ. مدفوعات P2P تتيح التحويل المباشر بين الأفراد عبر التطبيقات دون الحاجة لوسطاء مقاصة متعددين." },
+
+  { id: 146, module: 2, type: "tf", diff: "medium",
+    q_en: "An interchange fee is paid by the cardholder's bank to the merchant's bank every time a card payment is processed.",
+    q_ar: "يُدفع رسم التبادل (Interchange fee) من قِبل بنك حامل البطاقة إلى بنك التاجر في كل مرة تتم فيها معالجة دفعة بالبطاقة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Reversed: the merchant's bank (acquirer) pays the interchange fee to the cardholder's bank (issuer).",
+    exp_ar: "خطأ. معكوسة؛ رسوم Interchange Fee يدفعها بنك التاجر (Merchant's bank) إلى بنك حامل البطاقة (Cardholder's bank)." },
+
+  { id: 147, module: 2, type: "tf", diff: "medium",
+    q_en: "Interchange fees help cover the costs of transaction handling and fraud prevention in card payments.",
+    q_ar: "تساعد رسوم التبادل (Interchange fees) في تغطية تكاليف معالجة المعاملات والوقاية من الاحتيال في مدفوعات البطاقات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Interchange fees compensate issuing banks for payment processing, credit risk, and fraud prevention.",
+    exp_ar: "صح. تغطي رسوم التبادل تكاليف معالجة المعاملة والوقاية من الاحتيال." },
+
+  { id: 148, module: 2, type: "tf", diff: "easy",
+    q_en: "Stablecoins are digital assets pegged to a stable reserve asset, such as the US dollar, to maximize price volatility for speculative traders.",
+    q_ar: "العملات المستقرة (Stablecoins) هي أصول رقمية مربوطة بأصل احتياطي مستقر مثل الدولار الأمريكي لتعظيم تقلبات الأسعار للمضاربين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Stablecoins are pegged to stable assets specifically to minimize price volatility.",
+    exp_ar: "خطأ. العملات المستقرة (Stablecoins) مربوطة بأصل مستقر كالدولار لتقليل التذبذب (Minimize volatility) وليس زيادته." },
+
+  { id: 149, module: 2, type: "tf", diff: "easy",
+    q_en: "Decentralized Finance (DeFi) relies on centralized banking intermediaries to approve lending and borrowing transactions.",
+    q_ar: "يعتمد التمويل اللامركزي (DeFi) على وسطاء مصرفيين مركزيين للموافقة على معاملات الإقراض والاقتراض.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. DeFi uses blockchain smart contracts to operate without centralized banking intermediaries.",
+    exp_ar: "خطأ. التمويل اللامركزي (DeFi) يعمل على البلوكتشين بدون وسطاء مركزيين كالبنوك." },
+
+  { id: 150, module: 2, type: "tf", diff: "medium",
+    q_en: "Alternative Finance (AltFi) encompasses non-traditional services such as crowdfunding, peer-to-peer lending, and invoice financing.",
+    q_ar: "يشمل التمويل البديل (AltFi) خدمات غير تقليدية مثل التمويل الجماعي، والإقراض من نظير إلى نظير، وتمويل الفواتير.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. AltFi covers crowdfunding, P2P lending, and digital invoice financing outside traditional banks.",
+    exp_ar: "صح. يشمل التمويل البديل (AltFi) التمويل الجماعي، الإقراض P2P، وتمويل الفواتير." },
+
+  { id: 151, module: 2, type: "tf", diff: "easy",
+    q_en: "Buy Now, Pay Later (BNPL) services typically charge high compounding interest rates on every installment split at checkout.",
+    q_ar: "تفرض خدمات اشترِ الآن وادفع لاحقاً (BNPL) عادةً أسعار فائدة مركبة مرتفعة على كل قسط عند إتمام الشراء.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. BNPL typically splits purchases into interest-free installments.",
+    exp_ar: "خطأ. تتيح خدمات BNPL تقسيط المشتريات غالباً بدون فوائد (Without interest)." },
+
+  { id: 152, module: 2, type: "tf", diff: "medium",
+    q_en: "Automated underwriting in FinTech leverages data analytics and AI to evaluate creditworthiness faster and more accurately than traditional methods.",
+    q_ar: "يستفيد الاكتتاب الآلي (Automated underwriting) في FinTech من تحليل البيانات والذكاء الاصطناعي لتقييم الجدارة الائتمانية بسرعة ودقة أكبر.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Automated underwriting uses AI and data models to accelerate and refine credit decisions.",
+    exp_ar: "صح. الاكتتاب الآلي يستخدم الذكاء الاصطناعي وتحليل البيانات لتقييم الجدارة الائتمانية بسرعة ودقة." },
+
+  { id: 153, module: 2, type: "tf", diff: "easy",
+    q_en: "Fractional investing lowers entry barriers for novice investors by allowing them to purchase a portion of a high-value stock or ETF.",
+    q_ar: "يخفض الاستثمار الجزئي (Fractional investing) عوائق الدخول للمستثمرين المبتدئين من خلال السماح لهم بشراء جزء من سهم أو صندوق مرتفع القيمة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Fractional shares make expensive stocks and ETFs accessible with small capital.",
+    exp_ar: "صح. الاستثمار الجزئي يخفض عوائق الدخول للمبتدئين عبر شراء جزء من سهم مرتفع القيمة." },
+
+  { id: 154, module: 2, type: "tf", diff: "easy",
+    q_en: "ESG investing evaluates companies based on Environmental, Social, and Governance criteria rather than solely on short-term financial returns.",
+    q_ar: "يُقيِّم استثمار ESG الشركات بناءً على المعايير البيئية والاجتماعية والحوكمة بدلاً من الاعتماد فقط على العوائد المالية قصيرة الأجل.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. ESG investing integrates sustainability and ethical governance factors into investment decisions.",
+    exp_ar: "صح. يركز استثمار ESG على الشركات الملتزمة بمعايير البيئة والمجتمع والحوكمة." },
+
+  { id: 155, module: 2, type: "tf", diff: "easy",
+    q_en: "Crowdfunding enables businesses or individuals to raise large sums from a single institutional venture capitalist offline.",
+    q_ar: "يمكّن التمويل الجماعي (Crowdfunding) الشركات أو الأفراد من جمع مبالغ كبيرة من مستثمر مؤسسي واحد خارج الإنترنت.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Crowdfunding raises small amounts of capital from a large number of people via online platforms.",
+    exp_ar: "خطأ. التمويل الجماعي (Crowdfunding) يجمع مبالغ صغيرة من عدد كبير من الأشخاص عبر الإنترنت." },
+
+  { id: 156, module: 2, type: "tf", diff: "medium",
+    q_en: "In cybersecurity, tokenization replaces sensitive data like credit card numbers with unique identifiers that are useless if breached.",
+    q_ar: "في الأمن السيبراني، يستبدل الترميز (Tokenization) البيانات الحساسة مثل أرقام بطاقات الائتمان بمعرفات فريدة عديمة الفائدة في حال اختراقها.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Security tokens substitute sensitive PAN data with non-sensitive equivalents.",
+    exp_ar: "صح. في الأمن السيبراني، يستبدل Tokenization البيانات الحساسة برموز فريدة عديمة الفائدة إذا اخترقت." },
+
+  { id: 157, module: 2, type: "tf", diff: "easy",
+    q_en: "In cryptographic security, a user's private key should be shared publicly so anyone can decrypt their confidential files.",
+    q_ar: "في الأمن التشفيري، يجب مشاركة المفتاح الخاص (Private key) للمستخدم علناً حتى يتمكن أي شخص من فك تشفير ملفاته السرية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. The private key must remain strictly confidential, while the public key is shared.",
+    exp_ar: "خطأ. المفتاح الخاص (Private key) يجب أن يبقى سرياً تماماً، بينما يُشارك المفتاح العام (Public key)." },
+
+  // Module 3
+  { id: 158, module: 3, type: "tf", diff: "medium",
+    q_en: "High digital transformation costs include technological procurement, staff training, cybersecurity, and temporary service disruptions.",
+    q_ar: "تشمل التكاليف المرتفعة للتحول الرقمي شراء التكنولوجيا، وتدريب الموظفين، والأمن السيبراني، والانقطاعات المؤقتة للخدمة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Transformation budgets must cover tech acquisition, training, security, and transition disruptions.",
+    exp_ar: "صح. تشمل تكاليف التحول شراء التقنيات، التدريب، الأمن السيبراني، والتوقف المؤقت للخدمات." },
+
+  { id: 159, module: 3, type: "tf", diff: "easy",
+    q_en: "Smaller banks and insurance companies face fewer financial barriers during digital transformation than large global institutions.",
+    q_ar: "تواجه البنوك وشركات التأمين الأصغر حجماً عوائق مالية أقل أثناء التحول الرقمي مقارنة بالمؤسسات العالمية الكبرى.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Smaller institutions struggle more with high upfront transformation costs than large banks.",
+    exp_ar: "خطأ. البنوك وشركات التأمين الصغيرة تواجه صعوبة أكبر في تحمل التكاليف الباهظة للتحول الرقمي." },
+
+  { id: 160, module: 3, type: "tf", diff: "medium",
+    q_en: "Traditional financial institutions face a talent shortage in data science, cloud engineering, cybersecurity, and AI development.",
+    q_ar: "تواجه المؤسسات المالية التقليدية نقصاً في المواهب في مجالات علوم البيانات، وهندسة السحابة، والأمن السيبراني، وتطوير الذكاء الاصطناعي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Incumbent banks compete heavily with Big Tech for scarce digital engineering talent.",
+    exp_ar: "صح. تعاني المؤسسات التقليدية من نقص المواهب الرقمية وتنافس شركات التكنولوجيا الكبرى عليها." },
+
+  { id: 161, module: 3, type: "tf", diff: "easy",
+    q_en: "Digitizing financial services reduces an institution's exposure to cyber threats, eliminating the need for evolving security frameworks.",
+    q_ar: "تقلل رقمنة الخدمات المالية من تعرض المؤسسة للتهديدات السيبرانية، مما يلغي الحاجة إلى أطر أمنية متطورة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Expanded digital attack surfaces increase cyber exposure and demand continuous security upgrades.",
+    exp_ar: "خطأ. التحول الرقمي يزيد التعرض للمخاطر السيبرانية ويتطلب أطر حماية متطورة باستمرار." },
+
+  { id: 162, module: 3, type: "tf", diff: "medium",
+    q_en: "Banking-as-a-Service (BaaS) and subscription-based models represent new revenue streams enabled by digital transformation.",
+    q_ar: "تمثل الخدمات المصرفية كخدمة (BaaS) والنماذج القائمة على الاشتراك مصادر إيرادات جديدة يتيحها التحول الرقمي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Digital platforms unlock API monetization, BaaS partnerships, and subscription revenues.",
+    exp_ar: "صح. تتيح المنصات الرقمية نماذج أعمال جديدة مثل BaaS والاشتراكات والشراكات مع FinTech." },
+
+  { id: 163, module: 3, type: "tf", diff: "medium",
+    q_en: "Usage-Based Insurance (UBI) leverages Internet of Things (IoT) devices to calculate premiums based on real-time driving or health data.",
+    q_ar: "يستفيد التأمين القائم على الاستخدام (UBI) من أجهزة إنترنت الأشياء (IoT) لحساب الأقساط بناءً على بيانات القيادة أو الصحة الفعلية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. UBI uses telematics and IoT wearables to price policies dynamically.",
+    exp_ar: "صح. التأمين القائم على الاستخدام (UBI) يستخدم IoT لتحديد الأقساط بناءً على بيانات القيادة أو الصحة الفعلية." },
+
+  { id: 164, module: 3, type: "tf", diff: "easy",
+    q_en: "Digital claims processing in insurance increases claim settlement times and reduces transparency for policyholders.",
+    q_ar: "تزيد معالجة المطالبات رقمياً في التأمين من أوقات تسوية المطالبات وتقلل من الشفافية لحاملي الوثائق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Automated digital claims reduce turnaround times, cut costs, and improve transparency.",
+    exp_ar: "خطأ. معالجة المطالبات رقمياً تقلل وقت المعالجة والتكاليف وتحسن الشفافية." },
+
+  { id: 165, module: 3, type: "tf", diff: "easy",
+    q_en: "Partnering with InsurTech startups allows traditional insurers to access innovative technologies without reinventing the wheel.",
+    q_ar: "تتيح الشراكة مع شركات InsurTech الناشئة لشركات التأمين التقليدية الوصول إلى تقنيات مبتكرة دون إعادة اختراع العجلة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. InsurTech collaborations accelerate digital product delivery for established insurers.",
+    exp_ar: "صح. الشراكة مع شركات InsurTech تمنح شركات التأمين التقليدية وصولاً سريعاً للتقنيات الحديثة." },
+
+  { id: 166, module: 3, type: "tf", diff: "easy",
+    q_en: "Self-service portals in insurance increase customer dependency on call centers for routine policy updates.",
+    q_ar: "تزيد بوابات الخدمة الذاتية في التأمين من اعتماد العملاء على مراكز الاتصال لإجراء التحديثات الروتينية للوثائق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Self-service portals empower policyholders to manage policies directly and reduce call center load.",
+    exp_ar: "خطأ. بوابات الخدمة الذاتية تمكن العملاء من إدارة وثائقهم بأنفسهم وتقلل الاعتماد على مراكز الاتصال." },
+
+  { id: 167, module: 3, type: "tf", diff: "medium",
+    q_en: "Predictive analytics in insurance helps forecast claim probability, customer lifetime value, and fraud risks.",
+    q_ar: "تساعد التحليلات التنبؤية في التأمين على توقع احتمالية المطالبات، والقيمة الدائمة للعميل، ومخاطر الاحتيال.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Predictive models improve underwriting accuracy, retention, and fraud detection.",
+    exp_ar: "صح. تستخدم التحليلات التنبؤية في التأمين لتوقع احتمالية المطالبات والقيمة الدائمة للعميل والاحتيال." },
+
+  { id: 168, module: 3, type: "tf", diff: "medium",
+    q_en: "AI-powered portfolio management tools analyze market trends, client risk profiles, and investment goals in real time.",
+    q_ar: "تحلل أدوات إدارة المحافظ المدعومة بالذكاء الاصطناعي اتجاهات السوق وملفات مخاطر العملاء وأهداف الاستثمار في الوقت الفعلي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. AI portfolio engines optimize asset allocation continuously based on risk tolerance and goals.",
+    exp_ar: "صح. تساعد أدوات الذكاء الاصطناعي في تحسين المحافظ الاستثمارية لحظياً وفق مخاطر وأهداف العميل." },
+
+  { id: 169, module: 3, type: "tf", diff: "hard",
+    q_en: "M-Pesa helped increase financial inclusion in Kenya from 23% in 2007 to 84% in 2023.",
+    q_ar: "ساعدت منصة M-Pesa في رفع نسبة الشمول المالي في كينيا من 23% عام 2007 إلى 84% عام 2023.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. M-Pesa drove Kenya's financial inclusion from 23% (2007) to 84% (2023).",
+    exp_ar: "صح. رفعت M-Pesa الشمول المالي في كينيا من 23% عام 2007 إلى 84% عام 2023." },
+
+  { id: 170, module: 3, type: "tf", diff: "easy",
+    q_en: "Compliance with GDPR, PSD2, and AML regulations is a one-time setup task that rarely requires system updates.",
+    q_ar: "يُعد الامتثال للوائح GDPR وPSD2 وAML مهمة إعداد لمرة واحدة ونادراً ما يتطلب تحديثات للنظام.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Regulatory compliance requires continuous monitoring, reporting, and system updates.",
+    exp_ar: "خطأ. الامتثال لقوانين مثل GDPR و PSD2 و AML يتطلب تحديثات مستمرة وأنظمة متقدمة." },
+
+  { id: 171, module: 3, type: "tf", diff: "medium",
+    q_en: "Cryptographic hashing can verify that a large digital file has not been altered without needing to re-read every line manually.",
+    q_ar: "يمكن للتجزئة التشفيرية (Cryptographic hashing) التحقق من عدم تعديل ملف رقمي كبير دون الحاجة إلى إعادة قراءة كل سطر يدوياً.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Any tiny modification changes the file's cryptographic hash digest completely.",
+    exp_ar: "صح. تستخدم التجزئة التشفيرية (Hashing) للتحقق من سلامة الملفات الرقمية وعدم تعديلها." },
+
+  // Module 4
+  { id: 172, module: 4, type: "tf", diff: "easy",
+    q_en: "Insider threats in FinTech organizations can occur either maliciously or accidentally.",
+    q_ar: "يمكن أن تحدث التهديدات الداخلية في مؤسسات FinTech إما بقصد خبيث أو عن طريق الخطأ.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Insider threats include both intentional sabotage/theft and unintentional employee mistakes.",
+    exp_ar: "صح. قد تحدث التهديدات الداخلية بقصد خبيث (Maliciously) أو عن طريق الخطأ (Accidentally)." },
+
+  { id: 173, module: 4, type: "tf", diff: "easy",
+    q_en: "Phishing and social engineering attacks primarily exploit technical flaws in firewall hardware rather than human weaknesses.",
+    q_ar: "تستغل هجمات التصيد والهندسة الاجتماعية بشكل أساسي العيوب التقنية في أجهزة الجدران النارية بدلاً من نقاط الضعف البشرية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Social engineering manipulates human psychology rather than hardware flaws.",
+    exp_ar: "خطأ. التصيد والهندسة الاجتماعية يستغلان نقاط الضعف البشرية وليس عيوب الجدران النارية." },
+
+  { id: 174, module: 4, type: "tf", diff: "medium",
+    q_en: "Securing the backend database is sufficient for FinTech apps, as front-end mobile interfaces are immune to code injection and reverse engineering.",
+    q_ar: "يُعد تأمين قاعدة البيانات الخلفية كافياً لتطبيقات FinTech، حيث إن واجهات الهاتف المحمول الأمامية محصنة ضد حقن الأكواد والهندسة العكسية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Mobile front-ends are vulnerable to reverse engineering and tampering and require strong client-side protection.",
+    exp_ar: "خطأ. تطبيقات الواجهة الأمامية معرضة لحقن الأكواد والهندسة العكسية، وتأمينها لا يقل أهمية عن الخلفية." },
+
+  { id: 175, module: 4, type: "tf", diff: "medium",
+    q_en: "Cybercriminals are increasingly using Artificial Intelligence to automate attacks and mimic legitimate user behavior.",
+    q_ar: "يستخدم مجرمو الإنترنت الذكاء الاصطناعي بشكل متزايد لأتمتة الهجمات وتقليد سلوك المستخدمين الشرعيين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Attackers leverage AI for deepfakes, automated phishing, and evading anomaly detection.",
+    exp_ar: "صح. يستخدم مجرمو الإنترنت الذكاء الاصطناعي لأتمتة الهجمات وتقليد سلوك المستخدمين وتجاوز الكشف." },
+
+  { id: 176, module: 4, type: "tf", diff: "easy",
+    q_en: "Most jurisdictions allow FinTech startups to launch public financial services before obtaining regulatory licenses or registrations.",
+    q_ar: "تسمح معظم الدول لشركات FinTech الناشئة بإطلاق خدمات مالية عامة قبل الحصول على التراخيص أو التسجيلات الرقابية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Financial regulators require licensing or formal sandbox approval before offering public services.",
+    exp_ar: "خطأ. تشترط معظم الدول حصول شركات FinTech على التراخيص والتسجيل الرقابي قبل تقديم الخدمات." },
+
+  { id: 177, module: 4, type: "tf", diff: "medium",
+    q_en: "Regulators monitor FinTech firms solely for individual consumer protection and ignore broader systemic financial stability risks.",
+    q_ar: "تراقب الجهات الرقابية شركات FinTech لحماية المستهلك الفردي فقط وتتجاهل المخاطر النظامية الأوسع للاستقرار المالي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Regulators oversee both consumer protection and macro-level systemic financial stability.",
+    exp_ar: "خطأ. تراقب الجهات الرقابية شركات FinTech لحماية المستهلك وأيضاً لمنع المخاطر النظامية (Systemic risk)." },
+
+  { id: 178, module: 4, type: "tf", diff: "medium",
+    q_en: "Truth-in-advertising rules require FinTech marketing campaigns to include clear disclosures when promoting credit or investment products.",
+    q_ar: "تتطلب قواعد الإعلان الصادق أن تتضمن الحملات التسويقية لشركات FinTech إفصاحات واضحة عند الترويج لمنتجات الائتمان أو الاستثمار.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Consumer protection laws mandate transparent fee, APR, and risk disclosures.",
+    exp_ar: "صح. قوانين الإعلان الصادق تلزم بالإفصاح الواضح عند الترويج لمنتجات الائتمان أو الاستثمار." },
+
+  { id: 179, module: 4, type: "tf", diff: "medium",
+    q_en: "Synthetic identities are used by fraudsters to commit account takeover and financial fraud.",
+    q_ar: "يستخدم المحتالون الهويات الاصطناعية (Synthetic identities) لارتكاب جرائم الاستيلاء على الحسابات والاحتيال المالي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Fraudsters combine real and fabricated credentials to create synthetic identities.",
+    exp_ar: "صح. يستخدم المحتالون الهويات الاصطناعية أو بيانات الدخول المسروقة للاستيلاء على الحسابات." },
+
+  { id: 180, module: 4, type: "tf", diff: "medium",
+    q_en: "Operating across multiple international borders eliminates regulatory blind spots because all countries share identical FinTech laws.",
+    q_ar: "يلغي العمل عبر حدود دولية متعددة الفجوات الرقابية لأن جميع الدول تشترك في قوانين FinTech متطابقة تماماً.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Cross-border operations create complex jurisdictional gaps due to differing national regulations.",
+    exp_ar: "خطأ. العمل عبر الحدود يخلق فجوات وتحديات امتثال بسبب اختلاف القوانين بين الدول." },
+
+  { id: 181, module: 4, type: "tf", diff: "easy",
+    q_en: "Regular compliance training for employees is essential to build an internal culture of regulatory adherence.",
+    q_ar: "يُعد التدريب المنتظم للموظفين على الامتثال أمراً ضرورياً لبناء ثقافة داخلية للالتزام الرقابي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Ongoing training ensures staff recognize AML, privacy, and security obligations.",
+    exp_ar: "صح. التدريب المنتظم للموظفين ضروري لترسيخ ثقافة الامتثال داخل المؤسسة." },
+
+  { id: 182, module: 4, type: "tf", diff: "medium",
+    q_en: "Weak links in a FinTech firm's third-party supply chain can introduce vulnerabilities that compromise the entire ecosystem.",
+    q_ar: "يمكن أن تؤدي نقاط الضعف في سلسلة إمداد الطرف الثالث لشركة FinTech إلى ثغرات تعرض المنظومة بأكملها للخطر.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Supply-chain attacks exploit vulnerable third-party integrations to breach core systems.",
+    exp_ar: "صح. نقاط الضعف لدى الموردين وشركاء سلسلة الإمداد قد تعرض المنظومة بأكملها للاختراق." },
+
+  // Module 5
+  { id: 183, module: 5, type: "tf", diff: "medium",
+    q_en: "Open Finance narrows the scope of Open Banking by restricting data sharing solely to checking account balances.",
+    q_ar: "يضيق التمويل المفتوح (Open Finance) نطاق الخدمات المصرفية المفتوحة عبر قصر مشاركة البيانات على أرصدة الحسابات الجارية فقط.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Open Finance expands Open Banking to include insurance, pensions, investments, and mortgages.",
+    exp_ar: "خطأ. التمويل المفتوح (Open Finance) يوسع نطاق المصرفية المفتوحة ليشمل المعاشات والتأمين والاستثمارات." },
+
+  { id: 184, module: 5, type: "tf", diff: "medium",
+    q_en: "Future challenger banks are expected to adopt hybrid models combining digital efficiency with personalized human support.",
+    q_ar: "من المتوقع أن تتبنى البنوك الرقمية المنافسة مستقبلاً نماذج هجينة تجمع بين الكفاءة الرقمية والدعم البشري المخصص.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Hybrid models blend automated digital convenience with human advisory for complex needs.",
+    exp_ar: "صح. يتوقع المستقبل نماذج هجينة للبنوك الرقمية تجمع الكفاءة الرقمية والدعم البشري المخصص." },
+
+  { id: 185, module: 5, type: "tf", diff: "medium",
+    q_en: "Asset tokenization restricts trading to traditional stock market business hours and requires buying whole asset units.",
+    q_ar: "يقصر ترميز الأصول (Asset tokenization) التداول على ساعات عمل البورصة التقليدية ويتطلب شراء وحدات أصول كاملة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Tokenization enables 24/7 global trading and fractional ownership of assets.",
+    exp_ar: "خطأ. ترميز الأصول يتيح التداول على مدار الساعة 24/7 والملكية الجزئية للأصول." },
+
+  { id: 186, module: 5, type: "tf", diff: "hard",
+    q_en: "Sweden's e-Krona, the UAE, Saudi Arabia, Singapore, and Japan are listed among countries in advanced CBDC pilot or testing phases.",
+    q_ar: "تُدرج عملة e-Krona السويدية، والإمارات، والسعودية، وسنغافورة، واليابان ضمن الدول التي تمر بمراحل تجريبية أو اختبارية متقدمة للعملات الرقمية للبنوك المركزية (CBDC).",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. These jurisdictions are leading advanced wholesale and retail CBDC pilots.",
+    exp_ar: "صح. السويد (e-Krona) والإمارات والسعودية وسنغافورة واليابان في مراحل اختبار متقدمة لـ CBDC." },
+
+  { id: 187, module: 5, type: "tf", diff: "hard",
+    q_en: "Behavioral biometrics typically achieve around 99% accuracy, improve over time, and trigger multi-factor authentication only when a threat is detected.",
+    q_ar: "تحقق القياسات الحيوية السلوكية عادةً دقة تقارب 99%، وتتحسن بمرور الوقت، وتُفعِّل المصادقة متعددة العوامل فقط عند اكتشاف تهديد.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Behavioral biometrics provide frictionless continuous authentication (~99% accuracy) and step-up MFA on anomalies.",
+    exp_ar: "صح. تصل دقة القياسات الحيوية السلوكية إلى 99% وتتحسن مع الوقت وتفعل MFA عند اكتشاف تهديد فقط." },
+
+  { id: 188, module: 5, type: "tf", diff: "easy",
+    q_en: "Defining user needs clearly helps FinTechs avoid wasting resources on building features that nobody needs.",
+    q_ar: "يساعد تحديد احتياجات المستخدم بوضوح شركات FinTech على تجنب إهدار الموارد في بناء ميزات لا يحتاجها أحد.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Clear problem definition ensures engineering effort focuses on real customer pain points.",
+    exp_ar: "صح. تحديد المشكلة بدقة يجنب الشركات بناء ميزات لا يحتاجها المستخدمون." },
+
+  { id: 189, module: 5, type: "tf", diff: "medium",
+    q_en: "Designing for accessibility in FinTech includes features like voice navigation, larger text options, and offline functionality.",
+    q_ar: "يشمل التصميم المراعي لسهولة الوصول في FinTech ميزات مثل التوجيه الصوتي، وخيارات تكبير النص، والعمل دون اتصال بالإنترنت.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Accessible design ensures inclusivity for users with disabilities or intermittent connectivity.",
+    exp_ar: "صح. ميزات سهولة الوصول تشمل التوجيه الصوتي وتكبير الخط والعمل دون اتصال بالإنترنت." },
+
+  { id: 190, module: 5, type: "tf", diff: "easy",
+    q_en: "Effective FinTech design relies exclusively on software engineers working in isolation from legal and business teams.",
+    q_ar: "يعتمد التصميم الفعال في FinTech حصرياً على مهندسي البرمجيات الذين يعملون بمعزل عن الفرق القانونية وفرق الأعمال.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Cross-functional collaboration between UX, engineering, business, and legal/compliance teams is essential.",
+    exp_ar: "خطأ. التصميم الناجح يتطلب تعاوناً بين فرق التكنولوجيا والأعمال والامتثال والتصميم." },
+
+  { id: 191, module: 5, type: "tf", diff: "easy",
+    q_en: "Transparency regarding fees, terms, and data usage is fundamental to building user trust in FinTech products.",
+    q_ar: "تُعد الشفافية بشأن الرسوم والشروط واستخدام البيانات أمراً أساسياً لبناء ثقة المستخدم في منتجات FinTech.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Clear disclosures build long-term customer loyalty and trust.",
+    exp_ar: "صح. الشفافية في الرسوم والشروط واستخدام البيانات تبني ثقة المستخدمين على المدى الطويل." },
+
+  { id: 192, module: 5, type: "tf", diff: "medium",
+    q_en: "ISO 20022 and blockchain-based payment rails help reduce friction and enhance transparency in cross-border payments.",
+    q_ar: "يساعد معيار ISO 20022 وقنوات الدفع القائمة على البلوك تشين في تقليل الاحتكاك وتعزيز الشفافية في المدفوعات عبر الحدود.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Richer ISO 20022 messaging and blockchain rails streamline international settlement.",
+    exp_ar: "صح. معيار ISO 20022 وأنظمة البلوكتشين تقلل الاحتكاك وتزيد الشفافية في المدفوعات الدولية." },
+
+  { id: 193, module: 5, type: "tf", diff: "easy",
+    q_en: "In the future of FinTech, traditional banks and FinTech startups are shifting away from competition toward strategic collaboration.",
+    q_ar: "في مستقبل FinTech، تتحول البنوك التقليدية وشركات FinTech الناشئة بعيداً عن المنافسة نحو التعاون الاستراتيجي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Banks bring scale, trust, and licenses while FinTechs bring agility and UX innovation.",
+    exp_ar: "صح. تتجه البنوك وشركات FinTech نحو الشراكة والتعاون لدمج الثقة والبنية التحتية مع الابتكار والسرعة." },
+
+  { id: 194, module: 5, type: "tf", diff: "medium",
+    q_en: "Hyper-personalized financial services rely on big data and AI to adapt financial products to individual life stages in real time.",
+    q_ar: "تعتمد الخدمات المالية شديدة التخصيص على البيانات الضخمة والذكاء الاصطناعي لتكييف المنتجات المالية مع مراحل حياة الفرد في الوقت الفعلي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. AI and real-time analytics tailor savings, credit, and insurance to each user's lifecycle.",
+    exp_ar: "صح. الخدمات شديدة التخصيص تعتمد على البيانات الضخمة والذكاء الاصطناعي للتكيف مع مراحل حياة العميل." },
+
+  { id: 195, module: 5, type: "tf", diff: "medium",
+    q_en: "Vernacular interfaces and alternative credit scoring help expand financial inclusion to informal workers and remote communities.",
+    q_ar: "تساعد الواجهات باللغات المحلية والتصنيف الائتماني البديل في توسيع الشمول المالي ليشمل العاملين في القطاع غير الرسمي والمجتمعات النائية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Local-language UX and alternative scoring overcome literacy and credit-history barriers.",
+    exp_ar: "صح. الواجهات باللغات المحلية والتصنيف الائتماني البديل يعززان الشمول المالي للعمال غير الرسميين." },
+
+  { id: 196, module: 5, type: "tf", diff: "medium",
+    q_en: "Zero-trust security architecture is becoming an essential investment for FinTechs to combat rising digital threats.",
+    q_ar: "أصبحت معمارية الأمن القائمة على انعدام الثقة (Zero-trust) استثماراً أساسياً لشركات FinTech لمكافحة التهديدات الرقمية المتزايدة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Zero-trust verifies every user, device, and request continuously regardless of network location.",
+    exp_ar: "صح. معمارية Zero-trust أصبحت استثماراً أساسياً لمواجهة التهديدات الرقمية المتزايدة." },
+
+  { id: 197, module: 5, type: "tf", diff: "easy",
+    q_en: "Data-driven design decisions rely on tracking user drop-off points and feature engagement rather than internal team assumptions.",
+    q_ar: "تعتمد قرارات التصميم المبنية على البيانات على تتبع نقاط انسحاب المستخدمين والتفاعل مع الميزات بدلاً من افتراضات الفريق الداخلية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Funnel telemetry and user analytics objectively guide UX improvements.",
+    exp_ar: "صح. القرارات التصميمية المعتمدة على البيانات تتبع سلوك المستخدم الفعلي ونقاط انسحابه." },
+
+  { id: 198, module: 5, type: "tf", diff: "medium",
+    q_en: "Inclusive design requires co-creating solutions with diverse communities to overcome literacy and language barriers.",
+    q_ar: "يتطلب التصميم الشامل المشاركة في ابتكار الحلول مع مجتمعات متنوعة للتغلب على عوائق الأمية واللغة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Co-designing with underserved users ensures cultural and linguistic relevance.",
+    exp_ar: "صح. التصميم الشامل يشرك المجتمعات المتنوعة لتجاوز عوائق اللغة والأمية." },
+
+  // Module 6
+  { id: 199, module: 6, type: "tf", diff: "medium",
+    q_en: "Alternative data sources such as mobile phone usage and social media activity help FinTechs build more inclusive credit scoring models.",
+    q_ar: "تساعد مصادر البيانات البديلة مثل استخدام الهاتف المحمول ونشاط وسائل التواصل الاجتماعي شركات FinTech في بناء نماذج تصنيف ائتماني أكثر شمولاً.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Alternative data enables credit assessment for customers lacking traditional bureau files.",
+    exp_ar: "صح. البيانات البديلة كاستخدام الهاتف والسوشيال ميديا تساعد في بناء نماذج ائتمان أكثر شمولاً." },
+
+  { id: 200, module: 6, type: "tf", diff: "medium",
+    q_en: "Python is widely favored for machine learning workflows, while R excels particularly in statistical analysis and visualization.",
+    q_ar: "يُفضَّل Python على نطاق واسع لمسارات عمل تعلم الآلة، بينما تتفوق لغة R بشكل خاص في التحليل الإحصائي والتصور البياني.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Python leads in production ML pipelines while R is renowned for statistical modeling and graphics.",
+    exp_ar: "صح. تتميز Python بالتعلم الآلي، بينما تتفوق R في التحليل الإحصائي والتصور البياني." },
+
+  { id: 201, module: 6, type: "tf", diff: "hard",
+    q_en: "QlikView utilizes an associative data model that helps analysts uncover hidden relationships during exploratory financial analysis.",
+    q_ar: "يستخدم QlikView نموذج بيانات ترابطي (Associative data model) يساعد المحللين على كشف العلاقات الخفية أثناء التحليل المالي الاستكشافي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. QlikView's associative engine lets users explore data connections freely without rigid query hierarchies.",
+    exp_ar: "صح. يعتمد QlikView على نموذج البيانات الترابطي (Associative data model) لكشف العلاقات الخفية." },
+
+  { id: 202, module: 6, type: "tf", diff: "easy",
+    q_en: "Personalized financial recommendations in FinTech apps mirror the recommendation engines used by platforms like Netflix and Amazon.",
+    q_ar: "تحاكي التوصيات المالية المخصصة في تطبيقات FinTech محركات التوصية المستخدمة في منصات مثل Netflix وAmazon.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Collaborative filtering and behavioral ML tailor financial offers just like media/e-commerce platforms.",
+    exp_ar: "صح. تحاكي التوصيات المالية المخصصة أنظمة التوصية في منصات مثل Netflix و Amazon." },
+
+  { id: 203, module: 6, type: "tf", diff: "easy",
+    q_en: "In FinTech, data is considered a strategic asset that drives competitive advantage and agile market pivots.",
+    q_ar: "في FinTech، تُعتبر البيانات أصلاً استراتيجياً يدفع الميزة التنافسية والتكيف السريع مع السوق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Proprietary behavioral and transactional data creates durable competitive moats.",
+    exp_ar: "صح. تعد البيانات أصلاً استراتيجياً يمنح شركات FinTech ميزة تنافسية وقدرة على التكيف السريع." },
+
+  { id: 204, module: 6, type: "tf", diff: "easy",
+    q_en: "Data analytics supports long-term strategic planning, including product roadmaps and market expansion strategies.",
+    q_ar: "يدعم تحليل البيانات التخطيط الاستراتيجي طويل الأجل، بما في ذلك خرائط طريق المنتجات واستراتيجيات التوسع في السوق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Market demand and cohort analytics guide product development and geographic expansion.",
+    exp_ar: "صح. تدعم البيانات التخطيط الاستراتيجي طويل الأجل وخرائط طريق المنتجات والتوسع." },
+
+  { id: 205, module: 6, type: "tf", diff: "medium",
+    q_en: "Libraries such as Pandas, NumPy, and Scikit-learn are core components of the R programming ecosystem rather than Python.",
+    q_ar: "تُعد مكتبات مثل Pandas وNumPy وScikit-learn مكونات أساسية في بيئة برمجة R بدلاً من Python.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Pandas, NumPy, and Scikit-learn are foundational Python libraries.",
+    exp_ar: "خطأ. مكتبات Pandas و NumPy و Scikit-learn تابعة للغة Python وليس R." },
+
+  { id: 206, module: 6, type: "tf", diff: "easy",
+    q_en: "Automating data workflows reduces manual human errors and frees up staff for higher-value strategic activities.",
+    q_ar: "تقلل أتمتة مسارات عمل البيانات من الأخطاء البشرية اليدوية وتفرغ الموظفين للأنشطة الاستراتيجية ذات القيمة الأعلى.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Automated ETL and reporting pipelines improve accuracy and analyst productivity.",
+    exp_ar: "صح. أتمتة مسارات البيانات تقلل الأخطاء البشرية وتفرغ الموظفين للمهام الاستراتيجية." },
+
+  { id: 207, module: 6, type: "tf", diff: "medium",
+    q_en: "Identifying high-CLV customers allows FinTech firms to allocate retention resources more efficiently and optimize marketing ROI.",
+    q_ar: "يتيح تحديد العملاء ذوي القيمة الدائمة العالية (CLV) لشركات FinTech تخصيص موارد الاحتفاظ بالعملاء بكفاءة أكبر وتحسين عائد التسويق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Customer Lifetime Value modeling prioritizes high-value segments for retention and acquisition spend.",
+    exp_ar: "صح. تحديد العملاء ذوي القيمة الدائمة العالية (CLV) يحسن توجيه الموارد وعائد التسويق." },
+
+  { id: 208, module: 6, type: "tf", diff: "easy",
+    q_en: "Sentiment analysis is ineffective for reputation management because NLP cannot process unstructured text reviews.",
+    q_ar: "يُعد تحليل المشاعر غير فعال لإدارة السمعة لأن معالجة اللغة الطبيعية (NLP) لا تستطيع معالجة المراجعات النصية غير المهيكلة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. NLP excels at analyzing unstructured reviews and social feeds to track brand sentiment.",
+    exp_ar: "خطأ. تحليل المشاعر فعال جداً في إدارة السمعة بفضل قدرة NLP على تحليل النصوص غير المهيكلة." },
+
+  // Module 7
+  { id: 209, module: 7, type: "tf", diff: "easy",
+    q_en: "Machine learning fraud detection models are static and cannot adapt to newly emerging fraud patterns without manual reprogramming.",
+    q_ar: "تُعد نماذج تعلم الآلة لاكتشاف الاحتيال ثابتة ولا يمكنها التكيف مع أنماط الاحتيال الناشئة حديثاً دون إعادة برمجة يدوية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. ML models continuously retrain on new data to adapt rapidly to evolving fraud tactics.",
+    exp_ar: "خطأ. نماذج التعلم الآلي لكشف الاحتيال تتعرف على الأنماط المتطورة وتتكيف معها بسرعة." },
+
+  { id: 210, module: 7, type: "tf", diff: "medium",
+    q_en: "Preventing racial, gender, or geographic discrimination in AI credit scoring requires continuous bias audits and inclusive design.",
+    q_ar: "يتطلب منع التمييز العرقي أو الجندري أو الجغرافي في التصنيف الائتماني بالذكاء الاصطناعي إجراء تدقيق مستمر للتحيز وتصميماً شاملاً.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Regular fairness audits and diverse training datasets mitigate discriminatory lending outcomes.",
+    exp_ar: "صح. منع التمييز العرقي أو الجغرافي يتطلب تدقيق التحيز المستمر والتصميم الشامل." },
+
+  { id: 211, module: 7, type: "tf", diff: "medium",
+    q_en: "When an AI system makes a harmful financial mistake, legal accountability rests solely with the software algorithm rather than the institution.",
+    q_ar: "عندما يرتكب نظام ذكاء اصطناعي خطأً مالياً ضاراً، تقع المساءلة القانونية حصرياً على الخوارزمية البرمجية بدلاً من المؤسسة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Institutions remain legally and ethically accountable for outcomes produced by their AI systems.",
+    exp_ar: "خطأ. تقع المسؤولية على المؤسسة عبر أطر الحوكمة وسجلات التدقيق والقوانين، وليس على الخوارزمية وحدها." },
+
+  { id: 212, module: 7, type: "tf", diff: "medium",
+    q_en: "Informed consent requires institutions to notify consumers when AI is used and empower them to opt in or out of AI-driven services.",
+    q_ar: "تتطلب الموافقة المستنيرة من المؤسسات إخطار المستهلكين عند استخدام الذكاء الاصطناعي وتمكينهم من قبول أو رفض الخدمات القائمة عليه.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Transparency and user choice are key pillars of ethical AI governance.",
+    exp_ar: "صح. الموافقة المستنيرة تتطلب إعلام المستهلك باستخدام الذكاء الاصطناعي ومنحه خيار القبول أو الرفض." },
+
+  { id: 213, module: 7, type: "tf", diff: "easy",
+    q_en: "AI applications in finance are exempt from regulations like GDPR, PSD2, and Basel III because they operate autonomously.",
+    q_ar: "تُعفى تطبيقات الذكاء الاصطناعي في التمويل من لوائح مثل GDPR وPSD2 وبازل 3 لأنها تعمل بشكل مستقل.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Financial AI systems must strictly comply with GDPR, PSD2, Basel III, and fair-lending laws.",
+    exp_ar: "خطأ. تطبيقات الذكاء الاصطناعي ملزمة بالامتثال لقوانين مثل GDPR و PSD2 و Basel III." },
+
+  { id: 214, module: 7, type: "tf", diff: "medium",
+    q_en: "Blind over-reliance on AI automation is safe during unprecedented market crashes because algorithms always outperform human intuition.",
+    q_ar: "يُعد الاعتماد المفرط والأعمى على أتمتة الذكاء الاصطناعي آمناً أثناء انهيارات السوق غير المسبوقة لأن الخوارزميات تتفوق دائماً على الحدس البشري.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Black-swan market shocks require human-in-the-loop oversight because historical training patterns break down.",
+    exp_ar: "خطأ. الاعتماد الأعمى على الأتمتة خطير في الأسواق المتقلبة حيث يكون الحدس البشري حاسماً." },
+
+  { id: 215, module: 7, type: "tf", diff: "medium",
+    q_en: "Securing customer data technically is sufficient for ethical AI, even if the data is used in ways that harm user outcomes.",
+    q_ar: "يُعد تأمين بيانات العملاء تقنياً كافياً لتحقيق الذكاء الاصطناعي الأخلاقي، حتى لو استُخدمت البيانات بطرق تضر بنتائج المستخدمين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Ethical AI requires both technical security and fair, non-harmful data usage.",
+    exp_ar: "خطأ. الاستخدام الأخلاقي يتطلب حماية البيانات وأيضاً استخدامها بما يحترم حقوق الأفراد ويحقق نتائج إيجابية." },
+
+  { id: 216, module: 7, type: "tf", diff: "easy",
+    q_en: "To address AI's impact on banking employment, institutions should focus on upskilling staff and creating roles in AI oversight.",
+    q_ar: "لمعالجة تأثير الذكاء الاصطناعي على التوظيف المصرفي، يجب على المؤسسات التركيز على رفع مهارات الموظفين وخلق أدوار للإشراف على الذكاء الاصطناعي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Reskilling employees into AI governance, analytics, and advisory roles ensures workforce transition.",
+    exp_ar: "صح. لمواجهة أثر الأتمتة على الوظائف يجب إعادة تأهيل الموظفين وخلق أدوار للإشراف على الذكاء الاصطناعي." },
+
+  { id: 217, module: 7, type: "tf", diff: "easy",
+    q_en: "Data anonymization, encryption, and strict access controls are vital to protect user privacy in data-hungry AI systems.",
+    q_ar: "يُعد إخفاء هوية البيانات والتشفير وضوابط الوصول الصارمة أمراً حيوياً لحماية خصوصية المستخدم في أنظمة الذكاء الاصطناعي المتعطشة للبيانات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Privacy-enhancing technologies safeguard personal information used in ML training.",
+    exp_ar: "صح. التشفير وإخفاء الهوية وضوابط الوصول الصارمة ضرورية لحماية خصوصية البيانات." },
+
+  { id: 218, module: 7, type: "tf", diff: "easy",
+    q_en: "Personalized financial recommendations use ML to suggest savings plans and budget adjustments based on user spending patterns.",
+    q_ar: "تستخدم التوصيات المالية المخصصة تعلم الآلة لاقتراح خطط الادخار وتعديلات الميزانية بناءً على أنماط إنفاق المستخدم.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. ML personal finance assistants analyze cashflow habits to recommend tailored budgets and savings.",
+    exp_ar: "صح. تقترح التوصيات المالية المخصصة خطط ادخار وتعديلات ميزانية بناءً على إنفاق المستخدم." },
+
+  { id: 219, module: 7, type: "tf", diff: "medium",
+    q_en: "AI in RegTech analyzes legal texts and monitors transactions in real time to ensure adherence to regulatory updates.",
+    q_ar: "يحلل الذكاء الاصطناعي في التكنولوجيا التنظيمية (RegTech) النصوص القانونية ويراقب المعاملات في الوقت الفعلي لضمان الالتزام بالتحديثات الرقابية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. NLP parses regulatory changes while ML screens real-time transactions for compliance.",
+    exp_ar: "صح. يحلل الذكاء الاصطناعي في RegTech النصوص القانونية ويراقب المعاملات لحظياً للامتثال." },
+
+  { id: 220, module: 7, type: "tf", diff: "easy",
+    q_en: "Regulators are increasingly demanding greater oversight and reporting from financial institutions deploying AI models.",
+    q_ar: "تطالب الجهات الرقابية بشكل متزايد بمزيد من الرقابة وإعداد التقارير من المؤسسات المالية التي تنشر نماذج الذكاء الاصطناعي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Supervisory authorities require model risk governance, auditability, and explainability.",
+    exp_ar: "صح. تتجه الجهات الرقابية لفرض رقابة وتقارير أكثر صرامة على نماذج الذكاء الاصطناعي المالية." },
+
+  { id: 221, module: 7, type: "tf", diff: "easy",
+    q_en: "Misuse of customer data in AI models can lead to severe reputational damage and loss of consumer trust.",
+    q_ar: "يمكن أن يؤدي سوء استخدام بيانات العملاء في نماذج الذكاء الاصطناعي إلى أضرار جسيمة بالسمعة وفقدان ثقة المستهلكين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Privacy breaches or manipulative AI targeting quickly erode customer trust.",
+    exp_ar: "صح. إساءة استخدام بيانات العملاء تؤدي لفقدان الثقة وأضرار جسيمة بالسمعة." },
+
+  { id: 222, module: 7, type: "tf", diff: "easy",
+    q_en: "Regular model performance reviews are necessary to ensure AI systems remain accurate as market conditions evolve.",
+    q_ar: "تُعد المراجعات الدورية لأداء النماذج ضرورية لضمان بقاء أنظمة الذكاء الاصطناعي دقيقة مع تطور ظروف السوق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Continuous monitoring prevents model drift when economic or behavioral patterns shift.",
+    exp_ar: "صح. المراجعات الدورية لأداء النماذج ضرورية لضمان دقتها مع تغير ظروف السوق." },
+
+  { id: 223, module: 7, type: "tf", diff: "easy",
+    q_en: "Generative AI tools can assist FinTech teams in generating and publishing content under tight deadlines.",
+    q_ar: "يمكن لأدوات الذكاء الاصطناعي التوليدي مساعدة فرق FinTech في إنشاء المحتوى ونشره ضمن مواعيد نهائية ضيقة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Generative AI accelerates content drafting, summarization, and customer communications.",
+    exp_ar: "صح. تساعد أدوات الذكاء الاصطناعي التوليدي في توليد ونشر المحتوى ضمن جداول زمنية ضيقة." },
+
+  // Module 8
+  { id: 224, module: 8, type: "tf", diff: "easy",
+    q_en: "Fawry and M-Pesa are examples of local digital payment platforms that support borderless or multi-method transactions.",
+    q_ar: "تُعد فوري (Fawry) وإم-بيسا (M-Pesa) أمثلة على منصات الدفع الرقمي المحلية التي تدعم المعاملات متعددة الوسائل.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Fawry in Egypt and M-Pesa in East Africa are leading regional digital payment networks.",
+    exp_ar: "صح. تعد Fawry و M-Pesa بوابات دفع رقمية محلية تدعم طرق دفع متعددة." },
+
+  { id: 225, module: 8, type: "tf", diff: "medium",
+    q_en: "Palo Alto, CrowdStrike, and Splunk are examples of cybersecurity and security orchestration tools used in FinTech.",
+    q_ar: "تُعد Palo Alto وCrowdStrike وSplunk أمثلة على أدوات الأمن السيبراني وتنسيق الحماية المستخدمة في FinTech.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Palo Alto Networks, CrowdStrike, and Splunk provide enterprise firewall, endpoint, and SIEM security.",
+    exp_ar: "صح. تعد Palo Alto و CrowdStrike و Splunk من أبرز أدوات الأمن السيبراني في FinTech." },
+
+  { id: 226, module: 8, type: "tf", diff: "easy",
+    q_en: "Salesforce, HubSpot, and Zoho CRM are intrusion detection systems designed to block DDoS cyberattacks.",
+    q_ar: "تُعد Salesforce وHubSpot وZoho CRM أنظمة لكشف التسلل مصممة لصد هجمات حجب الخدمة (DDoS).",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Salesforce, HubSpot, and Zoho CRM are Customer Relationship Management platforms.",
+    exp_ar: "خطأ. Salesforce و HubSpot و Zoho CRM هي أنظمة إدارة علاقات العملاء (CRM) وليست أنظمة كشف تسلل." },
+
+  { id: 227, module: 8, type: "tf", diff: "medium",
+    q_en: "Leveraging IaaS and PaaS cloud models increases upfront capital expenditure (CapEx) compared to buying physical servers.",
+    q_ar: "يزيد الاعتماد على نماذج الحوسبة السحابية IaaS وPaaS من النفقات الرأسمالية الأولية (CapEx) مقارنة بشراء خوادم مادية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Cloud models convert heavy upfront CapEx into flexible pay-as-you-go operational expenditure (OpEx).",
+    exp_ar: "خطأ. نماذج IaaS و PaaS السحابية تقلل النفقات الرأسمالية (CapEx) وتتيح الدفع حسب الاستخدام." },
+
+  { id: 228, module: 8, type: "tf", diff: "medium",
+    q_en: "PostgreSQL, MongoDB, and Snowflake are scalable database and data warehouse solutions supporting high-speed data access.",
+    q_ar: "تُعد PostgreSQL وMongoDB وSnowflake حلول قواعد بيانات ومستودعات بيانات قابلة للتوسع تدعم الوصول السريع للبيانات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. They represent relational, NoSQL document, and cloud data warehouse engines respectively.",
+    exp_ar: "صح. تعد PostgreSQL و MongoDB و Snowflake قواعد بيانات ومستودعات بيانات عالية الأداء." },
+
+  { id: 229, module: 8, type: "tf", diff: "medium",
+    q_en: "An API-first architecture slows down time-to-market by preventing modular integration with external banking partners.",
+    q_ar: "تبطئ المعمارية القائمة على واجهات برمجة التطبيقات أولاً (API-first) من وقت الوصول إلى السوق عبر منع التكامل المعياري مع الشركاء المصرفيين الخارجيين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. API-first architecture accelerates time-to-market and enables seamless ecosystem partnerships.",
+    exp_ar: "خطأ. معمارية API-first تسرّع الوصول للسوق وتجعل المنصة مرنة وجاهزة للشراكات." },
+
+  { id: 230, module: 8, type: "tf", diff: "medium",
+    q_en: "Apache Kafka, Spark Streaming, and Flink are technologies used for real-time streaming data processing.",
+    q_ar: "تُعد Apache Kafka وSpark Streaming وFlink تقنيات تُستخدم لمعالجة البيانات المتدفقة في الوقت الفعلي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Kafka, Spark Streaming, and Apache Flink power high-throughput real-time event streaming.",
+    exp_ar: "صح. تستخدم Apache Kafka و Spark Streaming و Flink لمعالجة البيانات المتدفقة لحظياً." },
+
+  { id: 231, module: 8, type: "tf", diff: "easy",
+    q_en: "CI/CD pipelines automate software testing, building, and deployment to maintain code quality and accelerate innovation.",
+    q_ar: "تؤتمت خطوط أنابيب CI/CD اختبار البرمجيات وبناءها ونشرها للحفاظ على جودة الكود وتسريع الابتكار.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Continuous Integration and Continuous Deployment streamline software delivery cycles.",
+    exp_ar: "صح. تؤتمت خطوط CI/CD اختبار وبناء ونشر البرمجيات للحفاظ على الجودة وتسريع الابتكار." },
+
+  { id: 232, module: 8, type: "tf", diff: "medium",
+    q_en: "Jenkins, GitLab CI, and CircleCI are popular tools used to implement CI/CD pipelines.",
+    q_ar: "تُعد Jenkins وGitLab CI وCircleCI أدوات شائعة تُستخدم لتنفيذ خطوط أنابيب CI/CD.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Jenkins, GitLab CI, and CircleCI are widely adopted DevOps automation servers.",
+    exp_ar: "صح. تعد Jenkins و GitLab CI و CircleCI من أشهر أدوات تنفيذ CI/CD." },
+
+  { id: 233, module: 8, type: "tf", diff: "easy",
+    q_en: "Content Delivery Networks (CDNs) and load balancers increase network latency and create single-point bottlenecks.",
+    q_ar: "تزيد شبكات توصيل المحتوى (CDNs) وموازنات الأحمال من زمن استجابة الشبكة وتخلق اختناقات أحادية النقطة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. CDNs and load balancers reduce latency, distribute traffic, and eliminate single points of failure.",
+    exp_ar: "خطأ. شبكات CDN وموازنات الأحمال تقلل زمن الاستجابة وتمنع اختناقات النظام (Bottlenecks)." },
+
+  { id: 234, module: 8, type: "tf", diff: "medium",
+    q_en: "Prometheus, Grafana, and New Relic are infrastructure monitoring tools used to track KPIs and detect performance anomalies.",
+    q_ar: "تُعد Prometheus وGrafana وNew Relic أدوات لمراقبة البنية التحتية تُستخدم لتتبع مؤشرات الأداء واكتشاف الاختلالات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. These observability tools monitor system health, latency, and uptime metrics.",
+    exp_ar: "صح. تستخدم Prometheus و Grafana و New Relic لمراقبة صحة البنية التحتية واكتشاف الشذوذ." },
+
+  { id: 235, module: 8, type: "tf", diff: "medium",
+    q_en: "Looker is a Business Intelligence (BI) tool that supports real-time dashboards and customer segmentation.",
+    q_ar: "تُعد Looker أداة ذكاء أعمال (BI) تدعم لوحات المعلومات اللحظية وتقسيم العملاء.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Looker (Google Cloud BI) enables interactive analytics and customer segmentation.",
+    exp_ar: "صح. يُعد Looker من أدوات ذكاء الأعمال (BI) لبناء لوحات المعلومات اللحظية." },
+
+  { id: 236, module: 8, type: "tf", diff: "medium",
+    q_en: "Data residency regulations govern where sensitive financial data is physically stored and processed.",
+    q_ar: "تحكم لوائح توطين البيانات (Data residency) الأماكن الجغرافية التي يتم فيها تخزين البيانات المالية الحساسة ومعالجتها فعلياً.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Data residency laws require certain financial records to remain within national borders.",
+    exp_ar: "صح. تحكم قوانين توطين البيانات (Data residency) أماكن تخزين ومعالجة البيانات المالية جغرافياً." },
+
+  { id: 237, module: 8, type: "tf", diff: "easy",
+    q_en: "Monolithic legacy architectures are more modular and partner-ready than API-first architectures.",
+    q_ar: "تُعد البنى البرمجية القديمة المتجانسة (Monolithic) أكثر معيارية وجاهزية للشراكات من المعماريات القائمة على API-first.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Microservices and API-first designs are far more modular and partner-ready than rigid monoliths.",
+    exp_ar: "خطأ. معمارية API-first أكثر مرونة وقابلية للتكامل مع الشركاء من الأنظمة القديمة المتجانسة." },
+
+  { id: 238, module: 8, type: "tf", diff: "easy",
+    q_en: "Elastic resource allocation in cloud platforms like AWS and Azure allows FinTechs to scale dynamically with user demand.",
+    q_ar: "يتيح التخصيص المرن للموارد في المنصات السحابية مثل AWS وAzure لشركات FinTech التوسع ديناميكياً حسب طلب المستخدمين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Auto-scaling adjusts compute capacity automatically during traffic spikes.",
+    exp_ar: "صح. التخصيص المرن للموارد (Elastic resource allocation) يتيح التوسع السريع حسب طلب المستخدمين." },
+
+  { id: 239, module: 8, type: "tf", diff: "easy",
+    q_en: "Manual code deployment without automated testing reduces software errors compared to automated CI/CD pipelines.",
+    q_ar: "يقلل نشر الكود يدوياً دون اختبار آلي من أخطاء البرمجيات مقارنة بخطوط أنابيب CI/CD المؤتمتة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Manual deployments are error-prone, whereas automated CI/CD catches regressions early.",
+    exp_ar: "خطأ. النشر اليدوي يزيد احتمالية الأخطاء مقارنة بخطوط CI/CD المؤتمتة." },
+
+  { id: 240, module: 8, type: "tf", diff: "easy",
+    q_en: "Proactive infrastructure monitoring is essential for maintaining high service uptime and optimizing user experience.",
+    q_ar: "تُعد المراقبة الاستباقية للبنية التحتية ضرورية للحفاظ على استمرارية الخدمة العالية وتحسين تجربة المستخدم.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Proactive telemetry detects bottlenecks before they cause customer-facing outages.",
+    exp_ar: "صح. المراقبة الاستباقية للبنية التحتية ضرورية للحفاظ على استمرارية الخدمة وتجربة المستخدم." },
+
+  { id: 241, module: 8, type: "tf", diff: "easy",
+    q_en: "Stripe and Square provide features such as recurring billing, invoicing, and fraud detection for digital commerce.",
+    q_ar: "توفر منصتا Stripe وSquare ميزات مثل الفوترة المتكررة، وإصدار الفواتير، واكتشاف الاحتيال للتجارة الرقمية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Modern payment gateways bundle subscriptions, invoicing, and ML fraud screening.",
+    exp_ar: "صح. توفر منصات مثل Stripe و Square ميزات الفوترة المتكررة وكشف الاحتيال." },
+
+  // Module 9
+  { id: 242, module: 9, type: "tf", diff: "medium",
+    q_en: "Blockchain enables 'trustless' collaboration between unknown participants by eliminating a single point of control.",
+    q_ar: "يمكّن البلوك تشين التعاون دون الحاجة لثقة مسبقة (Trustless) بين مشاركين غير معروفين عبر إلغاء نقطة التحكم الواحدة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Cryptographic consensus replaces central intermediaries to establish trust among strangers.",
+    exp_ar: "صح. غياب نقطة التحكم الواحدة يتيح تعاوناً موثوقاً بين أطراف لا يعرفون بعضهم (Trustless)." },
+
+  { id: 243, module: 9, type: "tf", diff: "easy",
+    q_en: "Bitcoin was specifically designed as a centralized stablecoin pegged to the US dollar.",
+    q_ar: "صُممت عملة البيتكوين خصيصاً كعملة مستقرة مركزية مربوطة بالدولار الأمريكي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Bitcoin is a decentralized, floating-price cryptocurrency not pegged to any fiat currency.",
+    exp_ar: "خطأ. البيتكوين عملة مشفرة لا مركزية متقلبة السعر وليست عملة مستقرة مربوطة بالدولار." },
+
+  { id: 244, module: 9, type: "tf", diff: "easy",
+    q_en: "Ethereum is a major blockchain platform known for supporting programmable, self-executing smart contracts.",
+    q_ar: "تُعد Ethereum منصة بلوك تشين رئيسية معروفة بدعمها للعقود الذكية القابلة للبرمجة وذاتية التنفيذ.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Ethereum pioneered Turing-complete smart contracts and decentralized applications.",
+    exp_ar: "صح. تدعم شبكة Ethereum العقود الذكية القابلة للبرمجة والتنفيذ التلقائي." },
+
+  { id: 245, module: 9, type: "tf", diff: "medium",
+    q_en: "Ripple and Stellar focus on enabling international cross-border payments that settle in seconds without relying on SWIFT.",
+    q_ar: "تركز شبكتا Ripple وStellar على تمكين المدفوعات الدولية عبر الحدود التي تتم تسويتها في ثوانٍ دون الاعتماد على نظام SWIFT.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Ripple and Stellar provide fast, low-cost cross-border settlement rails.",
+    exp_ar: "صح. تقدم Ripple و Stellar شبكات دفع دولية تسوّي المعاملات في ثوان بدون SWIFT." },
+
+  { id: 246, module: 9, type: "tf", diff: "easy",
+    q_en: "Cryptocurrency prices are highly volatile due to speculative trading, regulatory news, and market sentiment.",
+    q_ar: "تتسم أسعار العملات المشفرة بتقلبات عالية بسبب المضاربة، والأخبار التنظيمية، ومعنويات السوق.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Unbacked cryptocurrencies experience sharp price swings driven by speculation and regulation.",
+    exp_ar: "صح. تتسم أسعار العملات المشفرة بتقلبات حادة نتيجة المضاربة والأخبار التنظيمية." },
+
+  { id: 247, module: 9, type: "tf", diff: "medium",
+    q_en: "CBDCs carry the same legal standing and face value as a country's physical cash.",
+    q_ar: "تحمل العملات الرقمية للبنوك المركزية (CBDCs) نفس المكانة القانونية والقيمة الاسمية للنقد الورقي المادي للدولة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. A CBDC is legal tender backed 1:1 by the issuing central bank.",
+    exp_ar: "صح. تحمل CBDCs نفس القيمة والقوة القانونية للنقد الورقي الرسمي للدولة." },
+
+  { id: 248, module: 9, type: "tf", diff: "easy",
+    q_en: "The primary goal of CBDCs is to completely abolish and replace physical cash worldwide immediately.",
+    q_ar: "يتمثل الهدف الأساسي للعملات الرقمية للبنوك المركزية (CBDCs) في إلغاء النقد المادي واستبداله بالكامل في جميع أنحاء العالم فوراً.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. CBDCs are intended to coexist with and complement physical cash rather than abolish it.",
+    exp_ar: "خطأ. لا تهدف CBDCs لإلغاء النقد الورقي بل لتكميله." },
+
+  { id: 249, module: 9, type: "tf", diff: "medium",
+    q_en: "CBDCs are designed to complement physical cash, as cash remains essential in areas with low internet penetration or unbanked citizens.",
+    q_ar: "صُممت CBDCs لتكمل النقد المادي، حيث يظل النقد ضرورياً في المناطق ذات الانتشار المنخفض للإنترنت أو للمواطنين غير المتعاملين مع البنوك.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Maintaining physical cash alongside CBDCs ensures universal access during connectivity gaps.",
+    exp_ar: "صح. تهدف CBDCs لتكملة الكاش الذي يظل ضرورياً في المناطق ذات ضعف الإنترنت أو غير المتعاملين مع البنوك." },
+
+  { id: 250, module: 9, type: "tf", diff: "medium",
+    q_en: "For governments, CBDCs can enhance transparency over money flows, aiding in tax collection and financial crime prevention.",
+    q_ar: "بالنسبة للحكومات، يمكن أن تعزز CBDCs الشفافية بشأن التدفقات النقدية، مما يساعد في تحصيل الضرائب ومنع الجرائم المالية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Digital traceability improves monetary visibility and combats illicit finance.",
+    exp_ar: "صح. تمنح CBDCs الحكومات شفافية أكبر لتتبع التدفقات المالية وتحصيل الضرائب ومنع الجرائم." },
+
+  { id: 251, module: 9, type: "tf", diff: "easy",
+    q_en: "Blockchain-based peer-to-peer transfers operate 24/7 and reduce transaction costs by eliminating multiple intermediaries.",
+    q_ar: "تعمل التحويلات من نظير إلى نظير القائمة على البلوك تشين على مدار الساعة وتقلل تكاليف المعاملات عبر إلغاء الوسطاء المتعددين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Direct on-chain settlement runs continuously without banking cut-off hours.",
+    exp_ar: "صح. التحويلات المباشرة عبر البلوكتشين تعمل 24/7 وتخفض التكاليف بإلغاء الوسطاء." },
+
+  { id: 252, module: 9, type: "tf", diff: "easy",
+    q_en: "Transactions recorded on a public blockchain are completely invisible and untraceable by network participants.",
+    q_ar: "تكون المعاملات المسجلة على البلوك تشين العام غير مرئية تماماً وغير قابلة للتتبع من قِبل المشاركين في الشبكة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Public blockchains are transparent ledgers where transactions are verifiable by all nodes.",
+    exp_ar: "خطأ. المعاملات على البلوكتشين العام مرئية وقابلة للتتبع من قبل جميع المشاركين." },
+
+  { id: 253, module: 9, type: "tf", diff: "medium",
+    q_en: "Blockchain's transparency and traceability are particularly valuable in supply chain finance and anti-corruption initiatives.",
+    q_ar: "تُعد شفافية البلوك تشين وقابليته للتتبع ذات قيمة خاصة في تمويل سلاسل الإمداد ومبادرات مكافحة الفساد.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Immutable provenance records prevent invoice duplication and procurement fraud.",
+    exp_ar: "صح. تعد شفافية البلوكتشين حاسمة في تمويل سلاسل الإمداد ومكافحة الفساد." },
+
+  { id: 254, module: 9, type: "tf", diff: "medium",
+    q_en: "Near real-time settlement on blockchain increases counterparty risk and locks up capital in multi-day clearing processes.",
+    q_ar: "تزيد التسوية شبه اللحظية على البلوك تشين من مخاطر الطرف المقابل وتجمد رأس المال في عمليات مقاصة تستغرق عدة أيام.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Instant settlement reduces counterparty risk and frees up trapped working capital.",
+    exp_ar: "خطأ. التسوية شبه اللحظية تقلل مخاطر الطرف المقابل وتحرر رأس المال المحتجز." },
+
+  { id: 255, module: 9, type: "tf", diff: "easy",
+    q_en: "Non-Fungible Tokens (NFTs) utilize blockchain technology to establish unique digital ownership.",
+    q_ar: "تستخدم الرموز غير القابلة للاستبدال (NFTs) تقنية البلوك تشين لإثبات الملكية الرقمية الفريدة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. NFTs represent verifiable ownership of unique digital or tokenized assets.",
+    exp_ar: "صح. تستخدم NFTs لإثبات الملكية الرقمية الفريدة عبر تقنية البلوكتشين." },
+
+  { id: 256, module: 9, type: "tf", diff: "medium",
+    q_en: "Critics of cryptocurrencies argue that boom-and-bust cycles resemble historical financial bubbles driven by hype.",
+    q_ar: "يجادل منتقدو العملات المشفرة بأن دورات الصعود والهبوط تشبه الفقاعات المالية التاريخية المدفوعة بالضجة الإعلامية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Speculative crypto rallies and crashes are frequently compared to historical asset bubbles.",
+    exp_ar: "صح. يرى بعض النقاد أن دورات الصعود والهبوط في العملات المشفرة تشبه الفقاعات المالية التاريخية." },
+
+  { id: 257, module: 9, type: "tf", diff: "medium",
+    q_en: "Unlike volatile cryptocurrencies, CBDCs are designed to support rather than disrupt a central bank's monetary policy.",
+    q_ar: "على عكس العملات المشفرة المتقلبة، صُممت CBDCs لدعم السياسة النقدية للبنك المركزي بدلاً من تعطيلها.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. CBDCs preserve central bank monetary sovereignty and transmission mechanisms.",
+    exp_ar: "صح. صُممت CBDCs لتدعم السياسة النقدية للبنك المركزي وليس لتعطيلها." },
+
+  { id: 258, module: 9, type: "tf", diff: "medium",
+    q_en: "Correspondent banking networks are faster and cheaper for cross-border microtransactions than blockchain payment rails.",
+    q_ar: "تُعد شبكات البنوك المراسلة أسرع وأرخص للمعاملات الدولية الصغيرة مقارنة بقنوات الدفع القائمة على البلوك تشين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Traditional correspondent chains involve multiple intermediary fees and delays compared to blockchain rails.",
+    exp_ar: "خطأ. أنظمة البلوكتشين أسرع وأرخص في التحويلات الدولية من شبكات البنوك المراسلة التقليدية." },
+
+  { id: 259, module: 9, type: "tf", diff: "medium",
+    q_en: "Cryptographic mining in Bitcoin involves solving complex computational puzzles to validate blocks and earn rewards.",
+    q_ar: "يتضمن التعدين التشفيري في البيتكوين حل ألغاز حسابية معقدة للتحقق من صحة الكتل وكسب المكافآت.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Proof-of-Work miners compete to solve SHA-256 cryptographic puzzles to append blocks.",
+    exp_ar: "صح. التعدين في البيتكوين يتطلب حل ألغاز حسابية معقدة للتحقق من الكتل وكسب المكافآت." },
+
+  // Module 10
+  { id: 260, module: 10, type: "tf", diff: "medium",
+    q_en: "Future FinTech professionals only need to work passively alongside machines without managing or ensuring they operate responsibly.",
+    q_ar: "يحتاج متخصصو FinTech في المستقبل فقط إلى العمل بشكل سلبي جنباً إلى جنب مع الآلات دون إدارتها أو ضمان عملها بمسؤولية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Professionals must actively govern, train, and ensure AI systems operate ethically and responsibly.",
+    exp_ar: "خطأ. يجب أن يكون العاملون مستعدين لإدارة الآلات وتشكيلها وضمان عملها بمسؤولية وليس مجرد العمل بجانبها." },
+
+  { id: 261, module: 10, type: "tf", diff: "easy",
+    q_en: "Traditional banking roles are evolving into hybrid positions that blend financial expertise with technology, analytics, and innovation.",
+    q_ar: "تتطور الأدوار المصرفية التقليدية إلى وظائف هجينة تمزج بين الخبرة المالية والتكنولوجيا والتحليلات والابتكار.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Modern finance roles require hybrid domain + digital/analytical skills.",
+    exp_ar: "صح. تتحول الوظائف المصرفية إلى أدوار تجمع بين الخبرة المالية والتكنولوجيا والتحليلات والابتكار." },
+
+  { id: 262, module: 10, type: "tf", diff: "easy",
+    q_en: "Data literacy in modern FinTech organizations is required exclusively within the IT department and is optional for other teams.",
+    q_ar: "تُعد محو الأمية البيانية (Data literacy) في مؤسسات FinTech الحديثة مطلوبة حصرياً داخل قسم تكنولوجيا المعلومات واختيارية للفرق الأخرى.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Data literacy is essential across product, risk, marketing, operations, and leadership teams.",
+    exp_ar: "خطأ. محو الأمية البيانية (Data literacy) أصبح مطلباً أساسياً عبر كافة الأقسام وليس قسم IT فقط." },
+
+  { id: 263, module: 10, type: "tf", diff: "easy",
+    q_en: "AI and Robotic Process Automation (RPA) are taking over repetitive tasks like transaction reconciliation and report generation.",
+    q_ar: "تتولى تقنيات الذكاء الاصطناعي وأتمتة العمليات الروبوتية (RPA) المهام المتكررة مثل مطابقة المعاملات وإعداد التقارير.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. RPA and AI automate rule-based back-office reconciliation and reporting.",
+    exp_ar: "صح. تتولى تقنيات AI و RPA المهام المتكررة مثل مطابقة المعاملات وإعداد التقارير." },
+
+  { id: 264, module: 10, type: "tf", diff: "easy",
+    q_en: "Traditional back-office jobs such as data entry and account reconciliation are experiencing significant employment growth due to FinTech.",
+    q_ar: "تشهد وظائف المكاتب الخلفية التقليدية مثل إدخال البيانات ومطابقة الحسابات نمواً كبيراً في التوظيف بسبب FinTech.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Manual back-office roles are declining as automation replaces repetitive processing.",
+    exp_ar: "خطأ. وظائف المكاتب الخلفية (Back-office) تشهد انخفاضاً كبيراً بسبب الأتمتة." },
+
+  { id: 265, module: 10, type: "tf", diff: "easy",
+    q_en: "FinTech organizations are replacing rigid hierarchical structures with flatter, cross-functional teams working in agile sprints.",
+    q_ar: "تستبدل مؤسسات FinTech الهياكل الهرمية الجامدة بفرق مسطحة متعددة الوظائف تعمل في دورات سريعة (Agile sprints).",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Flatter agile squads accelerate innovation and cross-disciplinary execution.",
+    exp_ar: "صح. تستبدل شركات FinTech الهياكل الهرمية بفرق مسطحة متعددة الوظائف تعمل بنظام Agile." },
+
+  { id: 266, module: 10, type: "tf", diff: "easy",
+    q_en: "Breaking down organizational silos fosters rapid iteration and collaborative problem-solving across engineering and product teams.",
+    q_ar: "يعزز كسر الصوامع التنظيمية (Silos) التكرار السريع وحل المشكلات بشكل تعاوني بين فرق الهندسة والمنتجات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Cross-team alignment eliminates bottlenecks and improves product delivery.",
+    exp_ar: "صح. كسر الصوامع التنظيمية (Silos) يعزز سرعة التطوير وحل المشكلات بشكل تعاوني." },
+
+  { id: 267, module: 10, type: "tf", diff: "easy",
+    q_en: "Tools like Slack, Zoom, Miro, and Notion support remote collaboration and expand FinTech access to global talent pools.",
+    q_ar: "تدعم أدوات مثل Slack وZoom وMiro وNotion التعاون عن بُعد وتوسع وصول شركات FinTech إلى الكفاءات العالمية.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Digital collaboration suites enable distributed teams and global hiring.",
+    exp_ar: "صح. تدعم أدوات Slack و Zoom و Miro و Notion العمل عن بعد وتوسع الوصول للمواهب العالمية." },
+
+  { id: 268, module: 10, type: "tf", diff: "medium",
+    q_en: "In FinTech software development, Java is widely used for data science and ML, while Python primarily powers scalable backend systems.",
+    q_ar: "في تطوير برمجيات FinTech، تُستخدم Java على نطاق واسع لعلوم البيانات وتعلم الآلة، بينما تشغّل Python الأنظمة الخلفية القابلة للتوسع بشكل أساسي.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Reversed: Python dominates data science/ML, while Java powers high-throughput enterprise backends.",
+    exp_ar: "خطأ. معكوسة؛ Python تُستخدم لعلوم البيانات والتعلم الآلي، بينما Java للأنظمة الخلفية القابلة للتوسع." },
+
+  { id: 269, module: 10, type: "tf", diff: "easy",
+    q_en: "SQL remains a fundamental skill for managing and querying relational databases in FinTech platforms.",
+    q_ar: "تظل لغة SQL مهارة أساسية لإدارة واستعلام قواعد البيانات العلائقية في منصات FinTech.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. SQL is indispensable for financial data analysis and transactional database management.",
+    exp_ar: "صح. تظل لغة SQL مهارة أساسية لإدارة واستعلام قواعد البيانات." },
+
+  { id: 270, module: 10, type: "tf", diff: "medium",
+    q_en: "Understanding regulations like GDPR, PSD2, and AML/KYC is solely the responsibility of compliance officers and unnecessary for developers.",
+    q_ar: "يُعد فهم لوائح مثل GDPR وPSD2 وAML/KYC مسؤولية مسؤولي الامتثال وحدهم وغير ضروري للمطورين.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Engineers and product managers must understand compliance rules to build compliant software by design.",
+    exp_ar: "خطأ. فهم GDPR و PSD2 و AML/KYC ضروري للمطورين ومديري المنتجات والمحللين وليس لمسؤولي الامتثال فقط." },
+
+  { id: 271, module: 10, type: "tf", diff: "medium",
+    q_en: "FinTech professionals must understand how to mitigate model bias and overfitting when working with AI and ML models.",
+    q_ar: "يجب على متخصصي FinTech فهم كيفية التخفيف من تحيز النماذج (Bias) والتخصيص المفرط (Overfitting) عند العمل مع نماذج الذكاء الاصطناعي وتعلم الآلة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Addressing bias and overfitting ensures fair and generalizable financial models.",
+    exp_ar: "صح. يجب أن يفهم العاملون كيفية تقليل تحيز النماذج (Bias) والتخصيص المفرط (Overfitting)." },
+
+  { id: 272, module: 10, type: "tf", diff: "easy",
+    q_en: "Wireframing, prototyping, and usability testing are core skills associated with UX/UI design thinking in FinTech.",
+    q_ar: "تُعد مهارات التخطيط الهيكلي (Wireframing)، والنماذج الأولية، واختبار قابلية الاستخدام مهارات أساسية مرتبطة بالتفكير التصميمي UX/UI في FinTech.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. These iterative UX practices create intuitive digital financial interfaces.",
+    exp_ar: "صح. التخطيط الهيكلي (Wireframing) والنماذج الأولية واختبار القابلية للاستخدام مهارات أساسية في UX/UI." },
+
+  { id: 273, module: 10, type: "tf", diff: "easy",
+    q_en: "DevOps methodologies focus on slowing down code deployment to once every two years for maximum stability.",
+    q_ar: "تركز منهجيات DevOps على إبطاء نشر الكود ليصبح مرة واحدة كل عامين لتحقيق أقصى قدر من الاستقرار.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. DevOps emphasizes frequent, automated, reliable continuous deployment.",
+    exp_ar: "خطأ. منهجيات DevOps تهدف للنشر السريع والمستمر للكود (Continuous deployment)." },
+
+  { id: 274, module: 10, type: "tf", diff: "easy",
+    q_en: "Strong communication skills are secondary in FinTech because technical coding excellence alone guarantees product success.",
+    q_ar: "تُعد مهارات التواصل القوية ثانوية في FinTech لأن التميز التقني في البرمجة وحده يضمن نجاح المنتج.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 1,
+    exp_en: "False. Cross-functional collaboration and stakeholder communication are vital for success.",
+    exp_ar: "خطأ. التميز التقني وحده لا يكفي، بل تعد مهارات التواصل والتعاون ضرورية لنجاح الفرق." },
+
+  { id: 275, module: 10, type: "tf", diff: "medium",
+    q_en: "Quantitative Analysts (Quants) develop complex mathematical models to inform algorithmic trading, pricing, and risk management.",
+    q_ar: "يطور المحللون الكميون (Quants) نماذج رياضية معقدة لتوجيه التداول الخوارزمي والتسعير وإدارة المخاطر.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Quants apply stochastic calculus, statistics, and ML to pricing and risk modeling.",
+    exp_ar: "صح. يطور المحللون الكميون (Quants) نماذج رياضية معقدة للتداول الخوارزمي وإدارة المخاطر." },
+
+  { id: 276, module: 10, type: "tf", diff: "easy",
+    q_en: "Full Stack Developers build FinTech platforms across both front-end user interfaces and back-end systems and APIs.",
+    q_ar: "يبني مطورو Full Stack منصات FinTech عبر كل من واجهات المستخدم الأمامية والأنظمة الخلفية وواجهات برمجة التطبيقات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Full stack engineers work end-to-end across client UI, server logic, and databases.",
+    exp_ar: "صح. يبني مطورو Full Stack المنصات من الواجهة الأمامية وحتى الأنظمة الخلفية و APIs." },
+
+  { id: 277, module: 10, type: "tf", diff: "easy",
+    q_en: "Cybersecurity Specialists handle penetration testing, encryption, threat detection, and compliance audits.",
+    q_ar: "يتولى متخصصو الأمن السيبراني اختبار الاختراق، والتشفير، واكتشاف التهديدات، وتدقيق الامتثال.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Cybersecurity teams safeguard financial platforms against intrusions and data breaches.",
+    exp_ar: "صح. يتولى متخصصو الأمن السيبراني اختبار الاختراق والتشفير وكشف التهديدات وتدقيق الامتثال." },
+
+  { id: 278, module: 10, type: "tf", diff: "easy",
+    q_en: "Product Managers bridge the gap between technical engineering teams and business goals while driving product roadmaps.",
+    q_ar: "يسد مديرو المنتجات الفجوة بين الفرق الهندسية التقنية وأهداف العمل مع قيادة خرائط طريق المنتجات.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Product Managers align customer needs, business strategy, and engineering execution.",
+    exp_ar: "صح. يربط مديرو المنتجات الفرق التقنية بأهداف العمل ويقودون خرائط طريق تطوير المنتجات." },
+
+  { id: 279, module: 10, type: "tf", diff: "easy",
+    q_en: "Payments Systems Specialists focus on the mechanics of payment gateways, payment rails, and clearing systems.",
+    q_ar: "يركز متخصصو أنظمة الدفع على آليات عمل بوابات الدفع، وقنوات الدفع، وأنظمة المقاصة.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Payments specialists manage settlement rails, gateway routing, and clearing compliance.",
+    exp_ar: "صح. يتخصص خبراء أنظمة الدفع في بوابات الدفع وقنوات الدفع وأنظمة المقاصة." },
+
+  { id: 280, module: 10, type: "tf", diff: "easy",
+    q_en: "Continuous learning and adaptability provide a decisive competitive edge in the rapidly evolving FinTech landscape.",
+    q_ar: "يوفر التعلم المستمر والقدرة على التكيف ميزة تنافسية حاسمة في مشهد التكنولوجيا المالية سريع التطور.",
+    opts_en: ["True", "False"], opts_ar: ["صح", "خطأ"], ans: 0,
+    exp_en: "True. Rapid technological and regulatory shifts reward lifelong learners.",
+    exp_ar: "صح. التعلم المستمر والمرونة في التكيف يمنحان ميزة تنافسية حاسمة في مجال FinTech." }
 ];
 
 // 2. 75 Core Terms Bank -> Generates 300 Bilingual Questions (4 patterns per term: 2 MCQ + 2 TF)
@@ -1841,76 +2944,87 @@ const TERMS_BANK = [
   { mod: 7, en: "Sentiment Analysis", ar: "تحليل المشاعر", def_en: "Using NLP on reviews and social media to gauge how users feel", def_ar: "استخدام معالجة اللغة لتحليل المراجعات ووسائل التواصل لقياس شعور المستخدمين" },
   { mod: 7, en: "Explainable AI", ar: "الذكاء الاصطناعي القابل للتفسير", def_en: "Frameworks that clarify how an AI decision was made", def_ar: "أطر توضح كيف تم اتخاذ قرار الذكاء الاصطناعي" },
   { mod: 7, en: "Algorithmic Bias", ar: "التحيز الخوارزمي", def_en: "Models unintentionally amplifying existing biases and causing unfair outcomes", def_ar: "نماذج تضخم دون قصد تحيزات قائمة وتنتج نتائج غير عادلة" },
-  { mod: 7, en: "Human-in-the-loop", ar: "الإنسان في الحلقة", def_en: "Keeping human oversight and fail-safes in AI systems", def_ar: "إبقاء رقابة بشرية وآليات أمان في أنظمة الذكاء الاصطناعي" },
-  { mod: 9, en: "Smart Contract", ar: "العقد الذكي", def_en: "A programmable agreement that executes automatically when conditions are met", def_ar: "اتفاق قابل للبرمجة ينفذ تلقائياً عند تحقق الشروط" },
-  { mod: 9, en: "Proof of Stake", ar: "إثبات الحصة", def_en: "A consensus model selecting validators by the cryptocurrency they stake, using less energy", def_ar: "نموذج إجماع يختار المدققين حسب العملة المشفرة المرهونة ويستهلك طاقة أقل" },
-  { mod: 9, en: "Stablecoin", ar: "العملة المستقرة", def_en: "A cryptocurrency pegged to a fiat currency, such as USDT or USDC", def_ar: "عملة مشفرة مرتبطة بعملة ورقية مثل USDT وUSDC" }
+  { mod: 9, en: "Smart Contract", ar: "العقد الذكي", def_en: "Self-executing contract with terms written directly into code on a blockchain", def_ar: "عقد ذاتي التنفيذ تُكتب شروطه مباشرة في الكود على البلوك تشين" },
+  { mod: 9, en: "Proof of Work", ar: "إثبات العمل", def_en: "Consensus mechanism requiring miners to solve complex computational puzzles", def_ar: "آلية توافق تتطلب من المعدّنين حل ألغاز حسابية معقدة" },
+  { mod: 9, en: "Proof of Stake", ar: "إثبات الحصة", def_en: "Energy-efficient consensus mechanism where validators lock up coins to verify blocks", def_ar: "آلية توافق موفرة للطاقة يقوم فيها المدققون برهن عملاتهم للتحقق من الكتل" },
+  { mod: 10, en: "Reskilling & Upskilling", ar: "إعادة التأهيل وتطوير المهارات", def_en: "Continuous training to adapt employees to emerging digital and AI technologies", def_ar: "التدريب المستمر لتأهيل الموظفين لمواكبة التقنيات الرقمية والذكاء الاصطناعي" }
 ];
 
-// Generate 300 deterministic bilingual questions from the 75 terms (4 patterns each) and combine with 124 direct questions
-function buildFullQuestionBank() {
-  const all = [...DIRECT_QUESTIONS];
-  let nextId = all.length + 1;
-  const totalTerms = TERMS_BANK.length;
+// Build full unified question bank (280 direct + 300 generated = 580 unique questions)
+function buildQuestionBank() {
+  const bank = [...DIRECT_QUESTIONS];
+  let nextId = 281;
 
   TERMS_BANK.forEach((term, idx) => {
-    // Deterministic distractors so answers stay consistent across language toggles
-    const d1 = TERMS_BANK[(idx + 7) % totalTerms];
-    const d2 = TERMS_BANK[(idx + 19) % totalTerms];
-    const d3 = TERMS_BANK[(idx + 37) % totalTerms];
-    const wrongTerm = TERMS_BANK[(idx + 23) % totalTerms];
+    const d1 = TERMS_BANK[(idx + 11) % TERMS_BANK.length];
+    const d2 = TERMS_BANK[(idx + 23) % TERMS_BANK.length];
+    const d3 = TERMS_BANK[(idx + 37) % TERMS_BANK.length];
 
-    const correctPos1 = idx % 4;
-    const correctPos2 = (idx + 2) % 4;
-
-    // Pattern 1 (MCQ): Identify Term from Definition
-    const opts1_en = [d1.en, d2.en, d3.en];
-    const opts1_ar = [`${d1.en} (${d1.ar})`, `${d2.en} (${d2.ar})`, `${d3.en} (${d3.ar})`];
-    opts1_en.splice(correctPos1, 0, term.en);
-    opts1_ar.splice(correctPos1, 0, `${term.en} (${term.ar})`);
-
-    all.push({
-      id: nextId++,
-      module: term.mod,
-      type: "mcq",
-      diff: "easy",
-      q_en: `Which term is defined as: "${term.def_en}"?`,
-      q_ar: `أي مصطلح يُعرَّف بأنه: "${term.def_ar}"؟`,
-      opts_en: opts1_en,
-      opts_ar: opts1_ar,
-      ans: correctPos1,
-      exp_en: `${term.en}: ${term.def_en}.`,
-      exp_ar: `${term.en} (${term.ar}): ${term.def_ar}.`
-    });
-
-    // Pattern 2 (MCQ): Identify Definition from Term
-    const opts2_en = [d1.def_en, d2.def_en, d3.def_en];
-    const opts2_ar = [d1.def_ar, d2.def_ar, d3.def_ar];
-    opts2_en.splice(correctPos2, 0, term.def_en);
-    opts2_ar.splice(correctPos2, 0, term.def_ar);
-
-    all.push({
+    // Pattern 1: MCQ - Definition -> Term (Medium)
+    const p1Pos = idx % 4;
+    const p1OptsEn = [], p1OptsAr = [];
+    const distTerms = [d1, d2, d3];
+    let dtIdx = 0;
+    for (let i = 0; i < 4; i++) {
+      if (i === p1Pos) {
+        p1OptsEn.push(term.en);
+        p1OptsAr.push(`${term.en} (${term.ar})`);
+      } else {
+        const dt = distTerms[dtIdx++];
+        p1OptsEn.push(dt.en);
+        p1OptsAr.push(`${dt.en} (${dt.ar})`);
+      }
+    }
+    bank.push({
       id: nextId++,
       module: term.mod,
       type: "mcq",
       diff: "medium",
-      q_en: `What is the accurate definition of "${term.en}"?`,
-      q_ar: `ما التعريف الدقيق لمصطلح "${term.en}" (${term.ar})؟`,
-      opts_en: opts2_en,
-      opts_ar: opts2_ar,
-      ans: correctPos2,
+      q_en: `Which FinTech & Digital Transformation concept is defined as: "${term.def_en}"?`,
+      q_ar: `أي مفهوم من مفاهيم التكنولوجيا المالية والتحول الرقمي يُعرَّف بأنه: "${term.def_ar}"؟`,
+      opts_en: p1OptsEn,
+      opts_ar: p1OptsAr,
+      ans: p1Pos,
+      exp_en: `${term.en}: ${term.def_en}.`,
+      exp_ar: `${term.en} (${term.ar}): ${term.def_ar}.`
+    });
+
+    // Pattern 2: MCQ - Term -> Definition (Hard)
+    const p2Pos = (idx + 2) % 4;
+    const p2OptsEn = [], p2OptsAr = [];
+    dtIdx = 0;
+    for (let i = 0; i < 4; i++) {
+      if (i === p2Pos) {
+        p2OptsEn.push(term.def_en);
+        p2OptsAr.push(term.def_ar);
+      } else {
+        const dt = distTerms[dtIdx++];
+        p2OptsEn.push(dt.def_en);
+        p2OptsAr.push(dt.def_ar);
+      }
+    }
+    bank.push({
+      id: nextId++,
+      module: term.mod,
+      type: "mcq",
+      diff: "hard",
+      q_en: `Which of the following best describes "${term.en}"?`,
+      q_ar: `أي من العبارات التالية تصف مفهوم "${term.en} (${term.ar})" بأفضل صورة؟`,
+      opts_en: p2OptsEn,
+      opts_ar: p2OptsAr,
+      ans: p2Pos,
       exp_en: `${term.en} refers to: ${term.def_en}.`,
       exp_ar: `يشير مصطلح ${term.en} (${term.ar}) إلى: ${term.def_ar}.`
     });
 
-    // Pattern 3 (True/False): True statement
-    all.push({
+    // Pattern 3: True/False - Correct Definition (Easy)
+    bank.push({
       id: nextId++,
       module: term.mod,
       type: "tf",
       diff: "easy",
-      q_en: `${term.en} is defined as: ${term.def_en}.`,
-      q_ar: `يُعرَّف مصطلح ${term.en} (${term.ar}) بأنه: ${term.def_ar}.`,
+      q_en: `True or False: ${term.en} refers to ${term.def_en.charAt(0).toLowerCase() + term.def_en.slice(1)}.`,
+      q_ar: `صح أم خطأ: يشير مصطلح ${term.en} (${term.ar}) إلى ${term.def_ar}.`,
       opts_en: ["True", "False"],
       opts_ar: ["صح", "خطأ"],
       ans: 0,
@@ -1918,325 +3032,50 @@ function buildFullQuestionBank() {
       exp_ar: `صح. ${term.en} (${term.ar}): ${term.def_ar}.`
     });
 
-    // Pattern 4 (True/False): False statement (mismatched definition)
-    all.push({
+    // Pattern 4: True/False - Swapped/False Definition (Medium)
+    bank.push({
       id: nextId++,
       module: term.mod,
       type: "tf",
-      diff: "hard",
-      q_en: `${term.en} is defined as: ${wrongTerm.def_en}.`,
-      q_ar: `يُعرَّف مصطلح ${term.en} (${term.ar}) بأنه: ${wrongTerm.def_ar}.`,
+      diff: "medium",
+      q_en: `True or False: ${term.en} refers to ${d2.def_en.charAt(0).toLowerCase() + d2.def_en.slice(1)}.`,
+      q_ar: `صح أم خطأ: يشير مصطلح ${term.en} (${term.ar}) إلى ${d2.def_ar}.`,
       opts_en: ["True", "False"],
       opts_ar: ["صح", "خطأ"],
       ans: 1,
-      exp_en: `False. That is the definition of ${wrongTerm.en}. ${term.en} means: ${term.def_en}.`,
-      exp_ar: `خطأ. هذا تعريف ${wrongTerm.en} (${wrongTerm.ar})، بينما ${term.en} (${term.ar}) يعني: ${term.def_ar}.`
+      exp_en: `False. That describes ${d2.en}. ${term.en} actually refers to: ${term.def_en}.`,
+      exp_ar: `خطأ. هذا التعريف يخص ${d2.en} (${d2.ar})، بينما ${term.en} (${term.ar}) يعني: ${term.def_ar}.`
     });
   });
 
-  return all;
+  return bank;
 }
 
-const QUESTIONS = buildFullQuestionBank();
+const QUESTION_BANK = buildQuestionBank();
 
-// Application State
-let currentLang = "en"; // Starts in English by default
-let activeQuestions = [];
-let userAnswers = [];
+// State
+let currentLang = "en";
+let activeExamQuestions = [];
+let userAnswers = {}; // { questionIndex: selectedOptionIndex }
 let currentIndex = 0;
 
-function getFilteredQuestions() {
-  const modVal = document.getElementById("moduleSelect").value;
-  const typeVal = document.getElementById("typeSelect").value;
-  const diffVal = document.getElementById("diffSelect").value;
-
-  return QUESTIONS.filter(q => {
-    const matchMod = (modVal === "all") || (String(q.module) === modVal);
-    const matchType = (typeVal === "all") || (q.type === typeVal);
-    const matchDiff = (diffVal === "all") || (q.diff === diffVal);
-    return matchMod && matchType && matchDiff;
-  });
-}
-
-function updateAvailableStats() {
-  const t = UI[currentLang];
-  const filtered = getFilteredQuestions();
-  const mcqCount = filtered.filter(q => q.type === "mcq").length;
-  const tfCount = filtered.filter(q => q.type === "tf").length;
-
-  const statsEl = document.getElementById("bankStats");
-  statsEl.innerHTML = `
-    <span>${t.statsTotal} <strong>${QUESTIONS.length}</strong></span>
-    <span>|</span>
-    <span>${t.statsMatching} <strong>${filtered.length}</strong></span>
-    <span>|</span>
-    <span>${t.statsMcq} <strong>${mcqCount}</strong></span>
-    <span>|</span>
-    <span>${t.statsTf} <strong>${tfCount}</strong></span>
-  `;
-
-  document.getElementById("filterAlert").classList.add("hidden");
-}
-
-function handleCountChange() {
-  const countVal = document.getElementById("countSelect").value;
-  const customWrap = document.getElementById("customCountWrap");
-  if (countVal === "custom") {
-    customWrap.classList.remove("hidden");
-  } else {
-    customWrap.classList.add("hidden");
-  }
-}
-
-function shuffleArray(arr) {
-  const copy = [...arr];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-function startExam() {
-  const t = UI[currentLang];
-  const filtered = getFilteredQuestions();
-  const alertBox = document.getElementById("filterAlert");
-
-  if (filtered.length === 0) {
-    alertBox.textContent = t.noMatchAlert;
-    alertBox.classList.remove("hidden");
-    return;
-  }
-
-  alertBox.classList.add("hidden");
-
-  const countMode = document.getElementById("countSelect").value;
-  let desiredCount = filtered.length;
-
-  if (countMode === "custom") {
-    const customVal = parseInt(document.getElementById("customCountInput").value, 10);
-    if (!isNaN(customVal) && customVal > 0) {
-      desiredCount = Math.min(customVal, filtered.length);
-    }
-  } else if (countMode !== "all") {
-    desiredCount = Math.min(parseInt(countMode, 10), filtered.length);
-  }
-
-  activeQuestions = shuffleArray(filtered).slice(0, desiredCount);
-  userAnswers = new Array(activeQuestions.length).fill(null);
-  currentIndex = 0;
-
-  showView("examView");
-  renderQuestion();
-  renderPalette();
-}
-
-function retrySameExam() {
-  if (activeQuestions.length === 0) {
-    startExam();
-    return;
-  }
-  userAnswers = new Array(activeQuestions.length).fill(null);
-  currentIndex = 0;
-  showView("examView");
-  renderQuestion();
-  renderPalette();
-}
-
-function goHome() {
-  showView("homeView");
+function toggleLanguage() {
+  currentLang = currentLang === "en" ? "ar" : "en";
+  document.documentElement.lang = currentLang;
+  document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+  applyTranslations();
   updateAvailableStats();
-}
-
-function showView(viewId) {
-  ["homeView", "examView", "resultsView"].forEach(id => {
-    document.getElementById(id).classList.add("hidden");
-  });
-  document.getElementById(viewId).classList.remove("hidden");
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-function renderQuestion() {
-  if (activeQuestions.length === 0) return;
-  const t = UI[currentLang];
-  const q = activeQuestions[currentIndex];
-
-  document.getElementById("qCounter").textContent = t.qCounter(currentIndex + 1, activeQuestions.length);
-  document.getElementById("qModuleBadge").textContent = t.moduleShort(q.module);
-  document.getElementById("qTypeBadge").textContent = t.typeBadge[q.type];
-
-  const diffBadge = document.getElementById("qDiffBadge");
-  diffBadge.textContent = t.diffBadge[q.diff];
-  diffBadge.className = `pill pill-diff-${q.diff}`;
-
-  document.getElementById("qText").textContent = currentLang === "en" ? q.q_en : q.q_ar;
-
-  const opts = currentLang === "en" ? q.opts_en : q.opts_ar;
-  const letters = currentLang === "en" ? ["A", "B", "C", "D"] : ["أ", "ب", "ج", "د"];
-  const listEl = document.getElementById("optionsList");
-  listEl.innerHTML = "";
-
-  opts.forEach((optText, idx) => {
-    const item = document.createElement("div");
-    item.className = "option-item" + (userAnswers[currentIndex] === idx ? " selected" : "");
-    item.onclick = () => selectOption(idx);
-
-    const marker = document.createElement("div");
-    marker.className = "opt-marker";
-    marker.textContent = q.type === "tf" ? (idx === 0 ? "✓" : "✕") : letters[idx];
-
-    const label = document.createElement("div");
-    label.textContent = optText;
-
-    item.appendChild(marker);
-    item.appendChild(label);
-    listEl.appendChild(item);
-  });
-
-  document.getElementById("prevBtn").disabled = currentIndex === 0;
-  document.getElementById("nextBtn").disabled = currentIndex === activeQuestions.length - 1;
-}
-
-function selectOption(optionIdx) {
-  userAnswers[currentIndex] = optionIdx;
-  renderQuestion();
-  renderPalette();
-}
-
-function prevQuestion() {
-  if (currentIndex > 0) {
-    currentIndex--;
+  if (!document.getElementById("examView").classList.contains("hidden")) {
     renderQuestion();
     renderPalette();
   }
-}
-
-function nextQuestion() {
-  if (currentIndex < activeQuestions.length - 1) {
-    currentIndex++;
-    renderQuestion();
-    renderPalette();
+  if (!document.getElementById("resultsView").classList.contains("hidden")) {
+    renderResults();
   }
-}
-
-function jumpToQuestion(idx) {
-  currentIndex = idx;
-  renderQuestion();
-  renderPalette();
-}
-
-function renderPalette() {
-  const grid = document.getElementById("paletteGrid");
-  grid.innerHTML = "";
-  activeQuestions.forEach((_, idx) => {
-    const btn = document.createElement("button");
-    btn.type = "button";
-    btn.className = "pal-btn";
-    if (userAnswers[idx] !== null) btn.classList.add("answered");
-    if (idx === currentIndex) btn.classList.add("current");
-    btn.textContent = idx + 1;
-    btn.onclick = () => jumpToQuestion(idx);
-    grid.appendChild(btn);
-  });
-}
-
-function openSubmitModal() {
-  const t = UI[currentLang];
-  const answeredCount = userAnswers.filter(a => a !== null).length;
-  const remainingCount = activeQuestions.length - answeredCount;
-
-  document.getElementById("modalStats").innerHTML = `
-    <div><strong>${t.answeredLbl}:</strong> ${answeredCount} / ${activeQuestions.length}</div>
-    <div><strong>${t.remainingLbl}:</strong> ${remainingCount}</div>
-  `;
-  document.getElementById("submitModal").classList.remove("hidden");
-}
-
-function closeSubmitModal() {
-  document.getElementById("submitModal").classList.add("hidden");
-}
-
-function finalizeExam() {
-  closeSubmitModal();
-  showView("resultsView");
-  renderResults();
-}
-
-function renderResults() {
-  const t = UI[currentLang];
-  let correct = 0;
-  let wrong = 0;
-  let unanswered = 0;
-
-  activeQuestions.forEach((q, idx) => {
-    const ans = userAnswers[idx];
-    if (ans === null) {
-      unanswered++;
-    } else if (ans === q.ans) {
-      correct++;
-    } else {
-      wrong++;
-    }
-  });
-
-  const total = activeQuestions.length;
-  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const isPass = pct >= 70;
-
-  const banner = document.getElementById("resultBanner");
-  banner.className = `result-banner ${isPass ? "pass" : "fail"}`;
-  document.getElementById("resultStatusText").textContent = isPass ? t.passed : t.failed;
-  document.getElementById("scorePercent").textContent = `${pct}%`;
-  document.getElementById("passRuleText").textContent = t.passRule;
-
-  document.getElementById("resScoreRatio").textContent = `${correct} / ${total}`;
-  document.getElementById("resCorrect").textContent = correct;
-  document.getElementById("resWrong").textContent = wrong;
-  document.getElementById("resUnanswered").textContent = unanswered;
-
-  const reviewContainer = document.getElementById("reviewContainer");
-  reviewContainer.innerHTML = "";
-
-  activeQuestions.forEach((q, idx) => {
-    const userAnsIdx = userAnswers[idx];
-    const opts = currentLang === "en" ? q.opts_en : q.opts_ar;
-    const qTitle = currentLang === "en" ? q.q_en : q.q_ar;
-    const expText = currentLang === "en" ? q.exp_en : q.exp_ar;
-
-    let statusClass = "unanswered";
-    let statusLabel = t.statusUnans;
-    if (userAnsIdx !== null) {
-      if (userAnsIdx === q.ans) {
-        statusClass = "correct";
-        statusLabel = t.statusCorrect;
-      } else {
-        statusClass = "wrong";
-        statusLabel = t.statusWrong;
-      }
-    }
-
-    const userAnsText = userAnsIdx !== null ? opts[userAnsIdx] : t.notAnswered;
-    const correctAnsText = opts[q.ans];
-
-    const card = document.createElement("div");
-    card.className = `review-item ${statusClass}`;
-    card.innerHTML = `
-      <div class="review-q">${idx + 1}. ${qTitle} <span class="pill" style="margin-inline-start:0.5rem;">${statusLabel}</span></div>
-      <div class="review-meta">
-        <div><strong>${t.yourAns}</strong> ${userAnsText}</div>
-        <div><strong>${t.correctAns}</strong> <span style="color:var(--success);font-weight:700;">${correctAnsText}</span></div>
-      </div>
-      <div class="exp-box"><strong>${t.explanation}</strong> ${expText}</div>
-    `;
-    reviewContainer.appendChild(card);
-  });
 }
 
 function applyTranslations() {
   const t = UI[currentLang];
-  document.documentElement.lang = currentLang;
-  document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
-
   document.getElementById("langToggleBtn").textContent = t.langBtn;
   document.getElementById("hdrTitle").textContent = t.hdrTitle;
   document.getElementById("hdrSub").textContent = t.hdrSub;
@@ -2247,8 +3086,7 @@ function applyTranslations() {
   document.getElementById("lblModule").textContent = t.lblModule;
   document.getElementById("optModAll").textContent = t.optModAll;
   for (let m = 1; m <= 10; m++) {
-    const opt = document.getElementById(`optMod${m}`);
-    if (opt) opt.textContent = t.modules[m];
+    document.getElementById(`optMod${m}`).textContent = t.modules[m];
   }
 
   document.getElementById("lblCount").textContent = t.lblCount;
@@ -2268,7 +3106,6 @@ function applyTranslations() {
   document.getElementById("optDiffHard").textContent = t.diffHard;
 
   document.getElementById("startBtn").textContent = t.startBtn;
-
   document.getElementById("prevBtn").textContent = t.prevBtn;
   document.getElementById("nextBtn").textContent = t.nextBtn;
   document.getElementById("submitExamBtn").textContent = t.submitBtn;
@@ -2282,6 +3119,7 @@ function applyTranslations() {
   document.getElementById("modalCancelBtn").textContent = t.modalCancel;
   document.getElementById("modalConfirmBtn").textContent = t.modalConfirm;
 
+  document.getElementById("passRuleText").textContent = t.passRule;
   document.getElementById("lblResScore").textContent = t.lblResScore;
   document.getElementById("lblResCorrect").textContent = t.lblResCorrect;
   document.getElementById("lblResWrong").textContent = t.lblResWrong;
@@ -2290,26 +3128,280 @@ function applyTranslations() {
   document.getElementById("newExamBtn").textContent = t.newExamBtn;
   document.getElementById("homeBtn").textContent = t.homeBtn;
   document.getElementById("reviewHeading").textContent = t.reviewHeading;
+}
 
+function getFilteredQuestions() {
+  const modVal = document.getElementById("moduleSelect").value;
+  const typeVal = document.getElementById("typeSelect").value;
+  const diffVal = document.getElementById("diffSelect").value;
+
+  return QUESTION_BANK.filter(q => {
+    if (modVal !== "all" && q.module !== Number(modVal)) return false;
+    if (typeVal !== "all" && q.type !== typeVal) return false;
+    if (diffVal !== "all" && q.diff !== diffVal) return false;
+    return true;
+  });
+}
+
+function updateAvailableStats() {
+  const t = UI[currentLang];
+  const filtered = getFilteredQuestions();
+  const mcqCount = filtered.filter(q => q.type === "mcq").length;
+  const tfCount = filtered.filter(q => q.type === "tf").length;
+
+  document.getElementById("bankStats").innerHTML = `
+    <span>${t.statsTotal} <strong>${QUESTION_BANK.length}</strong></span>
+    <span>${t.statsMatching} <strong>${filtered.length}</strong></span>
+    <span>${t.statsMcq} <strong>${mcqCount}</strong></span>
+    <span>${t.statsTf} <strong>${tfCount}</strong></span>
+  `;
+
+  const alertBox = document.getElementById("filterAlert");
+  if (filtered.length === 0) {
+    alertBox.textContent = t.noMatchAlert;
+    alertBox.classList.remove("hidden");
+  } else {
+    alertBox.classList.add("hidden");
+  }
+}
+
+function handleCountChange() {
+  const val = document.getElementById("countSelect").value;
+  const wrap = document.getElementById("customCountWrap");
+  if (val === "custom") {
+    wrap.classList.remove("hidden");
+  } else {
+    wrap.classList.add("hidden");
+  }
+}
+
+function shuffleArray(arr) {
+  const copy = [...arr];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function startExam() {
+  const filtered = getFilteredQuestions();
+  if (filtered.length === 0) {
+    updateAvailableStats();
+    return;
+  }
+
+  const countSel = document.getElementById("countSelect").value;
+  let desiredCount = filtered.length;
+  if (countSel === "custom") {
+    const parsed = parseInt(document.getElementById("customCountInput").value, 10);
+    desiredCount = isNaN(parsed) || parsed < 1 ? 10 : parsed;
+  } else if (countSel !== "all") {
+    desiredCount = parseInt(countSel, 10);
+  }
+
+  const shuffled = shuffleArray(filtered);
+  activeExamQuestions = shuffled.slice(0, Math.min(desiredCount, shuffled.length));
+  userAnswers = {};
+  currentIndex = 0;
+
+  showSection("examView");
+  renderQuestion();
+  renderPalette();
+}
+
+function retrySameExam() {
+  userAnswers = {};
+  currentIndex = 0;
+  showSection("examView");
+  renderQuestion();
+  renderPalette();
+}
+
+function goHome() {
+  showSection("homeView");
   updateAvailableStats();
-  if (!document.getElementById("examView").classList.contains("hidden")) {
+}
+
+function showSection(id) {
+  ["homeView", "examView", "resultsView"].forEach(sec => {
+    document.getElementById(sec).classList.toggle("hidden", sec !== id);
+  });
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function renderQuestion() {
+  const t = UI[currentLang];
+  const q = activeExamQuestions[currentIndex];
+  const total = activeExamQuestions.length;
+
+  document.getElementById("qCounter").textContent = t.qCounter(currentIndex + 1, total);
+  document.getElementById("qModuleBadge").textContent = t.moduleShort(q.module);
+  document.getElementById("qTypeBadge").textContent = t.typeBadge[q.type];
+
+  const diffBadge = document.getElementById("qDiffBadge");
+  diffBadge.textContent = t.diffBadge[q.diff];
+  diffBadge.className = `pill pill-diff-${q.diff}`;
+
+  document.getElementById("qText").textContent = currentLang === "ar" ? q.q_ar : q.q_en;
+
+  const opts = currentLang === "ar" ? q.opts_ar : q.opts_en;
+  const letters = ["A", "B", "C", "D"];
+  const listEl = document.getElementById("optionsList");
+  listEl.innerHTML = "";
+
+  opts.forEach((optText, idx) => {
+    const isSelected = userAnswers[currentIndex] === idx;
+    const item = document.createElement("div");
+    item.className = `option-item${isSelected ? " selected" : ""}`;
+    item.onclick = () => selectOption(idx);
+    item.innerHTML = `
+      <span class="opt-marker">${letters[idx]}</span>
+      <span>${optText}</span>
+    `;
+    listEl.appendChild(item);
+  });
+
+  document.getElementById("prevBtn").disabled = currentIndex === 0;
+  document.getElementById("nextBtn").disabled = currentIndex === total - 1;
+}
+
+function selectOption(optIdx) {
+  userAnswers[currentIndex] = optIdx;
+  renderQuestion();
+  renderPalette();
+}
+
+function prevQuestion() {
+  if (currentIndex > 0) {
+    currentIndex--;
     renderQuestion();
-  }
-  if (!document.getElementById("resultsView").classList.contains("hidden")) {
-    renderResults();
-  }
-  if (!document.getElementById("submitModal").classList.contains("hidden")) {
-    openSubmitModal();
+    renderPalette();
   }
 }
 
-function toggleLanguage() {
-  currentLang = currentLang === "en" ? "ar" : "en";
-  applyTranslations();
+function nextQuestion() {
+  if (currentIndex < activeExamQuestions.length - 1) {
+    currentIndex++;
+    renderQuestion();
+    renderPalette();
+  }
 }
 
-// Initialize on load (starts in English)
+function jumpToQuestion(idx) {
+  currentIndex = idx;
+  renderQuestion();
+  renderPalette();
+}
+
+function renderPalette() {
+  const grid = document.getElementById("paletteGrid");
+  grid.innerHTML = "";
+  activeExamQuestions.forEach((_, idx) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "pal-btn";
+    if (userAnswers[idx] !== undefined) btn.classList.add("answered");
+    if (idx === currentIndex) btn.classList.add("current");
+    btn.textContent = idx + 1;
+    btn.onclick = () => jumpToQuestion(idx);
+    grid.appendChild(btn);
+  });
+}
+
+function openSubmitModal() {
+  const t = UI[currentLang];
+  const total = activeExamQuestions.length;
+  const answered = Object.keys(userAnswers).length;
+  const remaining = total - answered;
+
+  document.getElementById("modalStats").innerHTML = `
+    <div><strong>${t.answeredLbl}:</strong> ${answered} / ${total}</div>
+    <div><strong>${t.remainingLbl}:</strong> ${remaining}</div>
+  `;
+  document.getElementById("submitModal").classList.remove("hidden");
+}
+
+function closeSubmitModal() {
+  document.getElementById("submitModal").classList.add("hidden");
+}
+
+function finalizeExam() {
+  closeSubmitModal();
+  showSection("resultsView");
+  renderResults();
+}
+
+function renderResults() {
+  const t = UI[currentLang];
+  const total = activeExamQuestions.length;
+  let correct = 0, wrong = 0, unanswered = 0;
+
+  activeExamQuestions.forEach((q, idx) => {
+    const uAns = userAnswers[idx];
+    if (uAns === undefined) {
+      unanswered++;
+    } else if (uAns === q.ans) {
+      correct++;
+    } else {
+      wrong++;
+    }
+  });
+
+  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+  const isPass = pct >= 70;
+
+  const banner = document.getElementById("resultBanner");
+  banner.className = `result-banner ${isPass ? "pass" : "fail"}`;
+  document.getElementById("resultStatusText").textContent = isPass ? t.passed : t.failed;
+  document.getElementById("scorePercent").textContent = `${pct}%`;
+
+  document.getElementById("resScoreRatio").textContent = `${correct} / ${total}`;
+  document.getElementById("resCorrect").textContent = correct;
+  document.getElementById("resWrong").textContent = wrong;
+  document.getElementById("resUnanswered").textContent = unanswered;
+
+  const container = document.getElementById("reviewContainer");
+  container.innerHTML = "";
+
+  activeExamQuestions.forEach((q, idx) => {
+    const uAns = userAnswers[idx];
+    const opts = currentLang === "ar" ? q.opts_ar : q.opts_en;
+    const qText = currentLang === "ar" ? q.q_ar : q.q_en;
+    const expText = currentLang === "ar" ? q.exp_ar : q.exp_en;
+
+    let statusClass = "unanswered";
+    let statusLabel = t.statusUnans;
+    let userAnsText = t.notAnswered;
+
+    if (uAns !== undefined) {
+      userAnsText = opts[uAns];
+      if (uAns === q.ans) {
+        statusClass = "correct";
+        statusLabel = t.statusCorrect;
+      } else {
+        statusClass = "wrong";
+        statusLabel = t.statusWrong;
+      }
+    }
+
+    const div = document.createElement("div");
+    div.className = `review-item ${statusClass}`;
+    div.innerHTML = `
+      <div class="review-q">${idx + 1}. ${qText} <span class="pill">[${t.moduleShort(q.module)} • ${statusLabel}]</span></div>
+      <div class="review-meta">
+        <div><strong>${t.yourAns}</strong> ${userAnsText}</div>
+        <div><strong>${t.correctAns}</strong> <span style="color:var(--success); font-weight:700;">${opts[q.ans]}</span></div>
+      </div>
+      <div class="exp-box"><strong>${t.explanation}</strong> ${expText}</div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+// Init
 applyTranslations();
+updateAvailableStats();
 </script>
 </body>
 </html>
